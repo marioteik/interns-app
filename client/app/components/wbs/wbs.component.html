@@ -1,0 +1,7 @@
+<div class="selectClass">
+  
+  <select [(ngModel)]="wbsSelect" (change)='sendWBS($event.target.value)'>
+    <option *ngFor="let Wbss of wbsss" value={{Wbss.code}}>{{Wbss.code}}</option>
+    
+  </select>
+</div>
