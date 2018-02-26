@@ -1,0 +1,18 @@
+.main-datasubmit{
+    background: white;
+    height: 63px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+}
+
+.form-control {		
+    background-position: 97% 50%;
+    background-image: url(/assets/images/calendario.jpg);
+    background-size: 25px;
+    background-repeat:no-repeat;
+}
+
+.form-group{
+    text-align: right;
+}

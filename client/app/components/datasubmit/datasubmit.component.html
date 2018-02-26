@@ -1,0 +1,21 @@
+<div class="main-datasubmit">
+    <div class="row">
+        <div class="col-xs-6 col-6 col-md-3 form-group">
+          <form [formGroup]="myForm">
+            <input
+              class="form-control"
+              [minDate]="minDate"
+              [maxDate]="maxDate"
+              #dp="bsDatepicker"
+              bsDatepicker
+              formControlName="myDate"
+              [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY',containerClass: 'theme-orange'}">
+          </form>
+        </div>
+        <div class="col-xs-6 col-6 col-md-9 form-group">
+          <button type="button" class="btn btn-outline-warning right" (click)="dp.toggle()">
+            Submit
+          </button>
+        </div>
+      </div>
+</div>
