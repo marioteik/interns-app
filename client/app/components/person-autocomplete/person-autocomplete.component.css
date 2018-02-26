@@ -16,12 +16,12 @@
   overflow-y: auto;
 }
 
-.pessoa {
+.pessoaOption {
   padding: 10px;
   font-family: sans-serif;
 }
 
-.pessoa:hover {
+.pessoaOption:hover {
   background: #e5e5e5;
 }
 
@@ -37,4 +37,9 @@
   position: fixed;
   padding: 100%;
   background: rgba(0, 0, 0, 0);
+}
+
+.excluirPessoa {
+  padding: 20px;
+  background: red;
 }

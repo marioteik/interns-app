@@ -28,7 +28,6 @@ export class PersonAutocompleteComponent implements OnInit {
     this.mostrarDropDown = !this.mostrarDropDown;
   }
 
-
   addPessoa() {
     
     console.log("entrou" + this.pessoa);

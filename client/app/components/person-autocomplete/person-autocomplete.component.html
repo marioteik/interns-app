@@ -4,10 +4,10 @@
         
         <div class="buscar">
             <datalist id="suggestions">
-                <option class="pessoa" (click)="handlePessoa(item)">
+                <option class="pessoaOption" *ngFor='let p of pessoas' value="{{p}}">
             </datalist>
             <button (click)="addPessoa()">Adicionar</button>
-            <input placeholder="buscar" id="color" list="suggestions" [(ngModel)]="pessoa" (ngModelChange)="handlePessoa(pessoa)">
+            <input placeholder="buscar" id="color" list="suggestions" [(ngModel)]="pessoa" name="nome" (input)="escolhePessoa(nome.value)">
         </div>
 
         <div class="pessoasAdicionadas">
