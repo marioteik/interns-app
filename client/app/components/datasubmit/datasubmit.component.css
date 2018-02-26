@@ -9,10 +9,68 @@
 .form-control {		
     background-position: 97% 50%;
     background-image: url(/assets/images/calendario.jpg);
-    background-size: 25px;
     background-repeat:no-repeat;
+    font-style: oblique;
+    
 }
 
 .form-group{
     text-align: right;
 }
+
+
+
+
+
+
+ /* #FFB414 */
+.textotest{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: green;
+    color: red;
+}
+.textotes2{
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+.theme-orange {
+    background-color: green;
+    color: red;
+    background: yellow;
+}
+.theme-orange .bs-datepicker-body table td.week span {
+    background-color: green;
+    color: red;
+    background: yellow;
+}
+ .bs-calendar-layout {
+    background-color: green;
+    color: red;
+    background: yellow;
+ }
+ .bs-datepicker-head{
+    background-color: green;
+    color: red;
+    background: yellow;
+ }
+ .bs-datepicker-body{
+    background-color: green;
+    color: red;
+    background: yellow;
+ }
+ .bs-datepicker-container{
+    background-color: green;
+    color: red;
+    background: yellow;
+ }
+ .bs-datepicker{
+    background-color: green;
+    color: red;
+    background: yellow;
+ }
+ .ng-reflect-ng-if{
+    background-color: green;
+    color: red;
+    background: yellow;
+ }

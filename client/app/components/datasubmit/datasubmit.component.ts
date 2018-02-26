@@ -6,8 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./datasubmit.component.css']
 })
 export class DatasubmitComponent implements OnInit {
-
-  constructor() { }
+  // minDate: Date;
+  maxDate: Date;
+  
+  constructor() {
+    // this.minDate = new Date();
+    this.maxDate = new Date();
+    // this.minDate.setDate(this.minDate.getDate() - 1);
+    this.maxDate.setDate(this.maxDate.getDate());
+   }
 
   ngOnInit() {
   }
