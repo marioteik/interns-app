@@ -18,6 +18,8 @@ import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { WbsComponent } from './components/wbs/wbs.component';
+import { ModalInputComponent } from './components/modal-input/modal-input.component';
+
 
 
 
@@ -36,7 +38,8 @@ export function tokenGetter() {
     AccountComponent,
     AdminComponent,
     NotFoundComponent,
-    WbsComponent
+    WbsComponent,
+    ModalInputComponent
   ],
   imports: [
     RoutingModule,

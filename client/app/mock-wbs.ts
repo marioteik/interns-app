@@ -1,5 +1,6 @@
 import { Wbss } from './wbs-class';
 export const WBS: Wbss[] = [
+    { _id: 0, code: '', description: '' },
     { _id: 1, code: 'AA93749', description: 'wbs para expenses' },
     { _id: 2, code: 'AA93750', description: 'wbs para expenses' },
     { _id: 2, code: 'AA93750', description: 'wbs para expenses' },
