@@ -29,6 +29,7 @@
   background: #f0f0f0;
   max-height: 300px;
   overflow-y: auto;
+  width: 30%;
 }
 
 #clickOut {
@@ -40,6 +41,14 @@
 }
 
 .excluirPessoa {
-  padding: 20px;
-  background: red;
+  margin: 0px 5px 0px 5px;
+  float: right;
+}
+
+.nomeEscolhido {
+  padding: 5px;
+}
+
+.nomeEscolhido:hover {
+  background: #e8e8e8;
 }

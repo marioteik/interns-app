@@ -11,8 +11,11 @@
         </div>
 
         <div class="pessoasAdicionadas">
-            <div (click)="apagaEscolhido(e)" *ngFor='let e of escolhidos'>
+            <div class="nomeEscolhido" *ngFor='let e of escolhidos'>
                 {{e}}
+                <div class="excluirPessoa" (click)="apagaEscolhido(e)">
+                    <i class="fas fa-times-circle"></i>
+                </div>
             </div>
         </div>
     </form>
