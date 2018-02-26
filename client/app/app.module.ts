@@ -17,6 +17,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ModalinputComponent } from './components/modalinput/modalinput.component';
+import { PopoverModule } from 'ngx-bootstrap';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -32,11 +34,13 @@ export function tokenGetter() {
     LogoutComponent,
     AccountComponent,
     AdminComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ModalinputComponent,
   ],
   imports: [
     RoutingModule,
     SharedModule,
+    PopoverModule.forRoot(),
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
