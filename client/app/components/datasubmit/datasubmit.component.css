@@ -1,76 +1,43 @@
 .main-datasubmit{
     background: white;
-    height: 63px;
+    height: 73px;
     border-style: solid;
     border-color: black;
     padding: 10px;
 }
 
-.form-control {		
-    background-position: 97% 50%;
-    background-image: url(/assets/images/calendario.jpg);
-    background-repeat:no-repeat;
-    font-style: oblique;
-    
-}
-
-.form-group{
+.form-button{
     text-align: right;
 }
 
+.form-group{
+    border-style: solid;
+    border-color: #e5e5e5;
+    margin-left: 20px;
+}
+
+.arrowbutton{
+    color: #FFB414;
+    background: none;
+    border: none;
+    padding: none;
+    margin: none;
+    float: left;
+    padding: 7px;
+}
+
+.form-control {		
+    background-position: 50% 50%;
+    background-image: url(/assets/images/calendario.jpg);
+    background-repeat:no-repeat;
+    width: 20px;
+    border: none;
+    float: right;
+}
 
 
 
 
 
  /* #FFB414 */
-.textotest{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: green;
-    color: red;
-}
-.textotes2{
-    font-family: 'Times New Roman', Times, serif
-}
-
-
-.theme-orange {
-    background-color: green;
-    color: red;
-    background: yellow;
-}
-.theme-orange .bs-datepicker-body table td.week span {
-    background-color: green;
-    color: red;
-    background: yellow;
-}
- .bs-calendar-layout {
-    background-color: green;
-    color: red;
-    background: yellow;
- }
- .bs-datepicker-head{
-    background-color: green;
-    color: red;
-    background: yellow;
- }
- .bs-datepicker-body{
-    background-color: green;
-    color: red;
-    background: yellow;
- }
- .bs-datepicker-container{
-    background-color: green;
-    color: red;
-    background: yellow;
- }
- .bs-datepicker{
-    background-color: green;
-    color: red;
-    background: yellow;
- }
- .ng-reflect-ng-if{
-    background-color: green;
-    color: red;
-    background: yellow;
- }
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */

@@ -1,27 +1,106 @@
 <div class="main-datasubmit">
     <div class="row">
-        <div class="col-xs-6 col-6 col-md-3 form-group">
-          <form [formGroup]="myForm">
-            <input
-              class="form-control"
-              [minDate]="minDate"
-              [maxDate]="maxDate"
-              #dp="bsDatepicker"
-              bsDatepicker
-              formControlName="myDate"
-              [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY',containerClass: 'theme-orange'}">
-          </form>
+        <div class="col-xs-6 col-6 col-md-2 form-group">
+
+            <button class="arrowbutton">
+                <i class="fas fa-angle-left"></i>
+              </button>
+
+              <button class="arrowbutton">
+                <i class="fas fa-angle-right"></i>
+              </button>
+
+              <form [formGroup]="myForm">
+                  <input
+                    class="form-control"
+                    [minDate]="minDate"
+                    [maxDate]="maxDate"
+                    #dp="bsDatepicker"
+                    bsDatepicker
+                    formControlName="myDate"
+                    [bsConfig]="{containerClass: 'theme-orange'}">
+                </form>
+
         </div>
-        <div class="col-xs-6 col-6 col-md-9 form-group">
+        <div class="col-xs-6 col-6 col-md-9 form-button">
           <button type="button" class="btn btn-outline-warning right" (click)="dp.toggle()">
             Submit
           </button>
         </div>
       </div>
 </div>
-<div class="textotest">
+<!-- <div class="textotest">
   vamos ver se muda
 </div>
 <div class="textotes2">
     vamos ver se muda
+  </div> -->
+
+
+
+
+
+<!-- 
+  <div class="col-xs-6 col-6 col-md-4 form-group">
+    <div class="quinzena">
+        <input 
+        name="ctl00$ctl00$MainContentPlaceHolder$tpcTimesheet$btnTimePeriodBack backbutton" 
+        value="<" 
+        id="ctl00_ctl00_MainContentPlaceHolder_tpcTimesheet_btnTimePeriodBack" 
+        class="TimesheetButtonHeight changePeriodButton ToggleArrowButton updateTimesheetControlCalendarButton verticalAlignTop" 
+        aria-label="Previous 15 days" 
+        type="submit">
+        <select 
+        name="ctl00$ctl00$MainContentPlaceHolder$tpcTimesheet$dropdownTimePeriod" 
+        id="ctl00_ctl00_MainContentPlaceHolder_tpcTimesheet_dropdownTimePeriod" 
+        class="TimesheetButtonHeight" 
+        title="Date:" 
+        aria-label="Select period from dropdown" 
+        onchange="dropdownTimePeriod_OnChange('ctl00_ctl00_MainContentPlaceHolder_tpcTimesheet_btnHiddenTimePeriodSubmitTrigger','ctl00_ctl00_MainContentPlaceHolder_tpcTimesheet_dropdownTimePeriod')" 
+        onfocus="dropdownTimePeriod_OnFocus('ctl00_ctl00_MainContentPlaceHolder_tpcTimesheet_dropdownTimePeriod')" 
+        style="vertical-align: top">
+            <option selected="selected" value="5/31/2018">5/31/2018</option>
+            <option value="2/28/2018">2/28/2018</option>
+            <option value="2/15/2018">2/15/2018</option>
+            <option value="1/31/2018">1/31/2018</option>
+            <option value="1/15/2018">1/15/2018</option>
+            <option value="12/31/2017">12/31/2017</option>
+            <option value="12/15/2017">12/15/2017</option>
+            <option value="11/30/2017">11/30/2017</option>
+            <option value="11/15/2017">11/15/2017</option>
+            <option value="10/31/2017">10/31/2017</option>
+            <option value="10/15/2017">10/15/2017</option>
+            <option value="9/30/2017">9/30/2017</option>
+          
+          </select>
+      <input 
+      name="ctl00$ctl00$MainContentPlaceHolder$tpcTimesheet$btnTimePeriodForward" 
+      value=">" 
+      id="ctl00_ctl00_MainContentPlaceHolder_tpcTimesheet_btnTimePeriodForward" 
+      class="TimesheetButtonHeight changePeriodButton ToggleArrowButton updateTimesheetControlCalendarButton verticalAlignTop" 
+      aria-label="Forward 15 days" 
+      type="submit">
+      <input 
+      name="ctl00$ctl00$MainContentPlaceHolder$tpcTimesheet$btnCalendarImage" 
+      id="ctl00_ctl00_MainContentPlaceHolder_tpcTimesheet_btnCalendarImage" 
+      class="CalendarButton" 
+      aria-label="Enter date in M/d/yyyy format" 
+      src="../assets/images/calendario.jpg"
+      alt="Calendar" 
+      onclick="loadCalendar(event); return false;" 
+      style="height:18px;width:18px;border-width:0px;margin-top: 4px;" 
+      type="image">
+    </div>
+    <form [formGroup]="myForm">
+      <input
+        class="form-control"
+        [minDate]="minDate"
+        [maxDate]="maxDate"
+        #dp="bsDatepicker"
+        bsDatepicker
+        formControlName="myDate"
+        [bsConfig]="{ dateInputFormat: '<DD/MM/YYYY>',containerClass: 'theme-orange'}">
+    </form>
   </div>
+ -->
+
