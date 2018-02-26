@@ -8,7 +8,7 @@ import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 export class EnvelopeComponent implements OnInit {
   @Output () numberEnvelope: EventEmitter <any> = new EventEmitter<any>() ;
   NumberEnv (Envelope:string):void {
-    this.numberEnvelope.emit (`Envelope: ${Envelope}`);
+    this.numberEnvelope.emit ();
   }
 
   constructor() { }
