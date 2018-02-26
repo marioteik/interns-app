@@ -1,0 +1,19 @@
+<div *ngIf="mostrarDropDown" id="clickOut" (click)="mudaDropDown()"></div>
+<div class="popup-add-person">
+    <form action="" autocomplete="on">
+        
+        <div class="buscar">
+            <datalist id="suggestions">
+                <option class="pessoa" (click)="handlePessoa(item)">
+            </datalist>
+            <button (click)="addPessoa()">Adicionar</button>
+            <input placeholder="buscar" id="color" list="suggestions" [(ngModel)]="pessoa" (ngModelChange)="handlePessoa(pessoa)">
+        </div>
+
+        <div class="pessoasAdicionadas">
+            <div (click)="apagaEscolhido(e)" *ngFor='let e of escolhidos'>
+                {{e}}
+            </div>
+        </div>
+    </form>
+</div>
