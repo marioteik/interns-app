@@ -17,6 +17,9 @@ import { LogoutComponent } from './logout/logout.component';
 import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NavMyteComponent } from './component/nav-myte/nav-myte.component';
+
+import { BsDropdownModule } from 'ngx-bootstrap';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -32,11 +35,13 @@ export function tokenGetter() {
     LogoutComponent,
     AccountComponent,
     AdminComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    NavMyteComponent
   ],
   imports: [
     RoutingModule,
     SharedModule,
+    BsDropdownModule.forRoot(),
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
