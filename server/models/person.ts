@@ -9,4 +9,4 @@ const personSchema = new mongoose.Schema({
 
 const Person = mongoose.model('Person', personSchema);
 
-export default Person;
+export default Person; 
