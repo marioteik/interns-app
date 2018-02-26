@@ -17,6 +17,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { StartExpenseComponent } from './components/start-expense/start-expense.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -32,7 +34,11 @@ export function tokenGetter() {
     LogoutComponent,
     AccountComponent,
     AdminComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    StartExpenseComponent
+    
+    
+    
   ],
   imports: [
     RoutingModule,
@@ -42,7 +48,8 @@ export function tokenGetter() {
         tokenGetter: tokenGetter,
         // whitelistedDomains: ['localhost:3000', 'localhost:4200']
       }
-    })
+    }),
+    AppRoutingModule
   ],
   providers: [
     AuthService,
