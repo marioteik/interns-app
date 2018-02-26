@@ -6,7 +6,10 @@ import { AuthService } from './services/auth.service';
   templateUrl: './app.component.html'
 })
 export class AppComponent implements AfterViewChecked {
-
+  dispNumber='';
+  envelopeNumb (eNumber:string) {
+    this.dispNumber = eNumber;
+  }
   constructor(public auth: AuthService,
               private changeDetector: ChangeDetectorRef) { }
 
