@@ -17,6 +17,9 @@ import { LogoutComponent } from './logout/logout.component';
 import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { DatePickerEndComponent } from './components/date-picker-end/date-picker-end.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker'
+
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -32,9 +35,11 @@ export function tokenGetter() {
     LogoutComponent,
     AccountComponent,
     AdminComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    DatePickerEndComponent,
   ],
   imports: [
+    BsDatepickerModule.forRoot(),
     RoutingModule,
     SharedModule,
     JwtModule.forRoot({
