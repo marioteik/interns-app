@@ -19,6 +19,13 @@ import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PersonAutocompleteComponent } from './components/person-autocomplete/person-autocomplete.component';
 
+// imports para filtro
+import { FormsModule  } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { FilterPipe} from './filter.pipe';
+
+
+
 export function tokenGetter() {
   return localStorage.getItem('token');
 }
@@ -34,9 +41,12 @@ export function tokenGetter() {
     AccountComponent,
     AdminComponent,
     NotFoundComponent,
-    PersonAutocompleteComponent
+    PersonAutocompleteComponent,
+    FilterPipe
   ],
   imports: [
+    FormsModule,
+    BrowserModule,
     RoutingModule,
     SharedModule,
     JwtModule.forRoot({
