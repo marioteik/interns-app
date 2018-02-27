@@ -1,0 +1,43 @@
+.main-datasubmit{
+    background: white;
+    height: 73px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+}
+
+.form-button{
+    text-align: right;
+}
+
+.form-group{
+    border-style: solid;
+    border-color: #e5e5e5;
+    margin-left: 20px;
+}
+
+.arrowbutton{
+    color: #FFB414;
+    background: none;
+    border: none;
+    padding: none;
+    margin: none;
+    float: left;
+    padding: 7px;
+}
+
+.form-control {		
+    background-position: 50% 50%;
+    background-image: url(/assets/images/calendario.jpg);
+    background-repeat:no-repeat;
+    width: 20px;
+    border: none;
+    float: right;
+}
+
+
+
+
+
+ /* #FFB414 */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */

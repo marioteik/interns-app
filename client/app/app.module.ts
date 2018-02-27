@@ -20,6 +20,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { EnvelopeComponent } from './components/envelope/envelope.component';
 import { ModalinputComponent } from './components/modalinput/modalinput.component';
 import { PopoverModule } from 'ngx-bootstrap';
+import { DatasubmitComponent } from './components/datasubmit/datasubmit.component';
+import { BsDatepickerModule } from 'ngx-bootstrap';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -38,11 +40,13 @@ export function tokenGetter() {
     NotFoundComponent,
     EnvelopeComponent
     ModalinputComponent,
+    DatasubmitComponent
   ],
   imports: [
     RoutingModule,
     SharedModule,
     PopoverModule.forRoot(),
+    BsDatepickerModule.forRoot(),
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
