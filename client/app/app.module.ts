@@ -30,6 +30,8 @@ import { BsDropdownModule } from 'ngx-bootstrap';
 import { StartExpenseComponent } from './components/start-expense/start-expense.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { WexpenseComponent } from './components/wexpense/wexpense.component';
+import { WbsComponent } from './components/wbs/wbs.component';
+import { ModalInputComponent } from './components/modal-input/modal-input.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -53,6 +55,8 @@ export function tokenGetter() {
     NavMyteComponent
     StartExpenseComponent
     WexpenseComponent
+    WbsComponent,
+    ModalInputComponent
   ],
   imports: [
     RoutingModule,
