@@ -1,19 +1,11 @@
-import { Component, OnInit, NgModule, EventEmitter } from '@angular/core';
+import { Component, OnInit, NgModule, EventEmitter, Output, Input } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ListaComponent } from '../lista/lista.component';
+import { ServiceTestService } from '../../service-test.service';
 
 declare var jquery: any;
 declare var $: any;
 
-@NgModule({
-  declarations: [
-
-  ],
-  imports: [
-    ListaComponent
-  ],
-  providers: [],
-})
 
 @Component({
   selector: 'app-select-type-component',
@@ -21,10 +13,20 @@ declare var $: any;
   styleUrls: ['./select-type.component.css']
 })
 export class SelectTypeComponent implements OnInit {
-  eventSend: EventEmitter<any> = new EventEmitter<any>();
-  callEvent(quantity:string, label:string) {
-    this.eventSend.emit(quantity);
-  }
+
+  static hide: any;
+  constructor(private ServiceTest: ServiceTestService){}
+
+
+  // @Input() eventSend: EventEmitter<any> = new EventEmitter<any>();
+
+  //  callEvent(quantity:string, label:string) {
+  //    this.eventSend.emit(`Quantidade:${quantity}`);
+  // }
+
+  //  teste(): void {
+  //    alert('foi');
+  // // }
 
   ngOnInit(): void {
 

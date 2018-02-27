@@ -8,7 +8,5 @@ export  class fields {
         public dtFim?: string
     ){
 
-        }
-
-    
+        }    
 }

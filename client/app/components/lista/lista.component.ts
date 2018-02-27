@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -8,6 +8,7 @@ import { PARA } from '../../list.mock';
 import { fields } from '../../fields';
 import { ValorComponent } from '../valor/valor.component';
 import { NotaComponent } from '../nota/nota.component';
+import { ServiceTestService } from '../../service-test.service';
 
 @Component({
   selector: 'app-lista',
@@ -36,31 +37,21 @@ import { NotaComponent } from '../nota/nota.component';
 
 export class ListaComponent implements OnInit {
 
+  static addItem(): any {
+    throw new Error("Method not implemented.");
+  }
   valor: String;
 
   onValueInserted(message: String): void{
      this.valor = message;
   }
 
-  @Output() teste: fields[] = [
-    
-  ];
-    
-  j: number = 1;
 
-  @Input() 
   
-  public addItem(num: number, tipo: string): void{
-    for(let i = 0; i < num; i++){
-      this.teste.push(
-        new fields(this.j, tipo, )
-      )
-      this.j ++;
-    } 
+  constructor(private ServiceTest: ServiceTestService) { 
   }
 
-  constructor() { 
-  }
+  
 
   ngOnInit() {
   }

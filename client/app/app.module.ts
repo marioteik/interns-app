@@ -23,6 +23,7 @@ import { fields } from './fields';
 import { PopoverModule } from 'ngx-bootstrap';
 // import { WbsComponent } from './components/wbs/wbs.component';
 import { SelectTypeComponent } from './components/select-type-component/select-type.component';
+import { ServiceTestService } from './service-test.service';
 
 
 export function tokenGetter() {
@@ -61,7 +62,8 @@ export function tokenGetter() {
     AuthGuardLogin,
     AuthGuardAdmin,
     CatService,
-    UserService
+    UserService,
+    ServiceTestService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
