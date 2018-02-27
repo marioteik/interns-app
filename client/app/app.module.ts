@@ -39,6 +39,7 @@ import { FormsModule  } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { FilterPipe} from './filter.pipe';
 
+import { SelectTypeComponent } from './select-type-component/select-type.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -66,6 +67,7 @@ export function tokenGetter() {
     ModalInputComponent
     PersonAutocompleteComponent,
     FilterPipe
+    SelectTypeComponent
   ],
   imports: [
     FormsModule,
