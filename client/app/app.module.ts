@@ -1,5 +1,6 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { JwtModule } from '@auth0/angular-jwt';
+import { NgxQRCodeModule } from 'ngx-qrcode2';
 
 import { RoutingModule } from './routing.module';
 import { SharedModule } from './shared/shared.module';
@@ -17,6 +18,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { QrcodeComponent } from './components/qrcode/qrcode.component';
+
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -32,14 +35,18 @@ export function tokenGetter() {
     LogoutComponent,
     AccountComponent,
     AdminComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    QrcodeComponent,
+    
   ],
   imports: [
     RoutingModule,
     SharedModule,
+    NgxQRCodeModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
+        
         // whitelistedDomains: ['localhost:3000', 'localhost:4200']
       }
     })
