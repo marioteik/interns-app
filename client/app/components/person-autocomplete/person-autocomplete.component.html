@@ -6,17 +6,17 @@
                 <option class="pessoaOption" *ngFor='let p of pessoas' value="{{p}}">
             </datalist>
             <input placeholder="EID" id="color" list="suggestions" [(ngModel)]="pessoa" name="nome" (input)="escolhePessoa(nome.value)">
-            <button (click)="addPessoa()">Adicionar</button>
+            <button id="botaoAdd" (click)="addPessoa()">Adicionar</button>
         </div>
 
         <div class="pessoasAdicionadas">
             <div class="nomeEscolhido" *ngFor='let e of escolhidos'>
-                {{e}}
+                <span class="nomeDaPessoa">{{e}}</span>
                 <div class="excluirPessoa" (click)="apagaEscolhido(e)">
                     <i class="fas fa-times-circle"></i>
                 </div>
             </div>
         </div>
 
-    </form>
+    </form>  
 </div>

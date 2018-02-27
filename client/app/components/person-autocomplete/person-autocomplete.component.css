@@ -1,3 +1,8 @@
+.popup-add-person {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
 .pessoaOption {
   padding: 10px;
   font-family: sans-serif;
@@ -11,7 +16,11 @@
   background: #f0f0f0;
   max-height: 300px;
   overflow-y: auto;
-  width: 30%;
+  width: 80%;
+}
+
+.nomeDaPessoa {
+  width: auto;
 }
 
 .excluirPessoa {
@@ -21,6 +30,18 @@
 
 .nomeEscolhido {
   padding: 5px;
+  margin: 0;
+}
+
+#color {
+  min-width: 80%;
+  max-width: 100%;
+  width: auto;
+}
+
+#botaoAdd {
+  width: auto;
+  max-width: 100%;
 }
 
 .nomeEscolhido:hover {
