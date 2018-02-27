@@ -1,0 +1,29 @@
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Tipo</th>
+        <th>WBS</th> 
+        <th id="valor">Valor</th>
+        <th>Data inicio</th>
+        <th>Data fim</th>
+        <th>Nota</th>
+        <th>+ Pessoas</th>
+    </tr>
+
+    <tr *ngFor="let c of par">
+        <td>{{c.id}}</td>
+        <td>{{c.tipo}}</td>
+        <td>{{c.wbs}}</td>
+        <td> <!--s <app-valor (insertValue) = 'onValueInserted($event)'></app-valor> --> 
+            <input 
+            id="campo-valor" 
+            class="form-control form-control-sm" 
+            type="number" 
+            style="width: 150px;">  
+        </td> 
+        <td>{{c.dtInicio}}</td>
+        <td>{{c.dtFim}}</td>
+        <td><app-nota></app-nota></td>
+        <td><span>icon</span></td>
+    </tr>       
+</table>

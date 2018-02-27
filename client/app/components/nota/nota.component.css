@@ -1,0 +1,9 @@
+input[type="file"] {
+    display: none;
+}
+
+#funcionaporfavor{
+    font-size: 25px;
+    color: #FFB414;
+}
+
