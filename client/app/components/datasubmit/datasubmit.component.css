@@ -1,6 +1,5 @@
 .main-datasubmit{
     background: white;
-    height: 73px;
     border-style: solid;
     border-color: black;
     padding: 10px;
@@ -8,12 +7,23 @@
 
 .form-button{
     text-align: right;
+    flex-wrap: none;
+    padding: 0;
+    height: 100%;
+    margin-top: 1px;
+}
+
+.row{
+    margin: 0;
+    flex-wrap: unset;
 }
 
 .form-group{
     border-style: solid;
     border-color: #e5e5e5;
-    margin-left: 20px;
+    padding-right: 9px;
+    padding-left: 0px;
+    margin: 0;
 }
 
 .arrowbutton{
@@ -23,7 +33,7 @@
     padding: none;
     margin: none;
     float: left;
-    padding: 7px;
+    padding: 5px;
 }
 
 .form-control {		
@@ -33,11 +43,13 @@
     width: 20px;
     border: none;
     float: right;
+    padding: 5px;
 }
+ 
 
 
 
 
 
  /* #FFB414 */
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+ /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
