@@ -1,6 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { JwtModule } from '@auth0/angular-jwt';
-
 import { RoutingModule } from './routing.module';
 import { SharedModule } from './shared/shared.module';
 import { CatService } from './services/cat.service';
@@ -14,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+<<<<<<< HEAD
 import { EnvelopeComponent } from './components/envelope/envelope.component';
 import { ModalinputComponent } from './components/modalinput/modalinput.component';
 import { PopoverModule } from 'ngx-bootstrap';
@@ -36,6 +36,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FilterPipe} from './filter.pipe';
 
 import { SelectTypeComponent } from './select-type-component/select-type.component';
+import { ListaComponent } from './components/lista/lista.component';
+import { ValorComponent } from './components/valor/valor.component';
+import { NotaComponent } from './components/nota/nota.component';
+import { fields } from './fields';
+import { PopoverModule } from 'ngx-bootstrap';
+// import { WbsComponent } from './components/wbs/wbs.component';
+import { SelectTypeComponent } from './components/select-type-component/select-type.component';
+
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -61,6 +69,10 @@ export function tokenGetter() {
     PersonAutocompleteComponent,
     FilterPipe,
     SelectTypeComponent
+    ListaComponent,
+    ValorComponent,
+    NotaComponent,
+    SelectTypeComponent  
   ],
   imports: [
     FormsModule,
@@ -91,5 +103,3 @@ export function tokenGetter() {
 })
 
 export class AppModule { }
-
-

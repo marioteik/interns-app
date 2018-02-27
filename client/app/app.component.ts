@@ -1,5 +1,7 @@
 import { AfterViewChecked, ChangeDetectorRef, Component } from '@angular/core';
 import { AuthService } from './services/auth.service';
+import { ValorComponent } from './components/valor/valor.component';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -10,6 +12,14 @@ export class AppComponent implements AfterViewChecked {
   envelopeNumb (eNumber: string) {
     this.dispNumber = eNumber;
   }
+
+  valor = ValorComponent;
+  
+  test = ' ';
+  recievingValue(message: string){
+    this.test = message;
+  }
+
   constructor(public auth: AuthService,
               private changeDetector: ChangeDetectorRef) { }
 
