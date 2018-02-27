@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ModalinputComponent } from './modalinput.component';
+import { SelectTypeComponent } from './select-type.component';
 
 describe('ModalinputComponent', () => {
-  let component: ModalinputComponent;
-  let fixture: ComponentFixture<ModalinputComponent>;
+  let component: SelectTypeComponent;
+  let fixture: ComponentFixture<SelectTypeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ModalinputComponent ]
+      declarations: [ SelectTypeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ModalinputComponent);
+    fixture = TestBed.createComponent(SelectTypeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
