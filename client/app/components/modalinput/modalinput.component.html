@@ -1,0 +1,12 @@
+<ng-template #popTemplate>
+      <input type="number" class="form-control" min="0"/>
+  </ng-template>
+  
+  <div class="button">
+      <button type="button" 
+          class="btn btn-default btn-secondary" 
+          [popover]="popTemplate" 
+          placement="bottom">
+          Taxi
+      </button> 
+  </div>
