@@ -20,7 +20,10 @@ import { ListaComponent } from './components/lista/lista.component';
 import { ValorComponent } from './components/valor/valor.component';
 import { NotaComponent } from './components/nota/nota.component';
 import { fields } from './fields';
+import { PopoverModule } from 'ngx-bootstrap';
 // import { WbsComponent } from './components/wbs/wbs.component';
+import { SelectTypeComponent } from './components/select-type-component/select-type.component';
+
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -38,14 +41,14 @@ export function tokenGetter() {
     AdminComponent,
     NotFoundComponent,
     ListaComponent,
-    // WbsComponent
     ValorComponent,
     NotaComponent,
-    
+    SelectTypeComponent  
   ],
   imports: [
     RoutingModule,
     SharedModule,
+    PopoverModule.forRoot(),
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,

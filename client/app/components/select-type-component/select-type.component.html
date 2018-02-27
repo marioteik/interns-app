@@ -1,0 +1,113 @@
+
+
+
+<ng-template #popTemplate>
+  <input type="number"  min="0" (click)="addItem(1, Taxi)" />
+</ng-template>
+
+<app-loading [condition]="isLoading"></app-loading>
+
+<!-- <app-toast [message]="toast.message"></app-toast> -->
+
+<p id="title-select-type">Select Type</p>
+
+<div class="main-lista-select-type">
+
+  <div class="lista-select-type">
+    <p class="paragraph-select-type">Accommodation</p>
+    <ul class="sub-lista-select-type">
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="accommodation" [popover]="popTemplate" placement="bottom"> Apartment </a>
+        </span>
+      </li>
+      <li class="btn btn-secondary">
+        <span class="popover-wrapper">
+        <a [popover]="popTemplate" placement="bottom" class="link-select-type" id="accommodation"> 
+          Hotel 
+        </a>
+      </span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="lista-select-type">
+    <p class="paragraph-select-type">Car</p>
+    <ul class="sub-lista-select-type">
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="car" [popover]="popTemplate" placement="bottom"> Parking, Toll, Fuel </a>
+        </span>
+      </li>
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="car" [popover]="popTemplate" placement="bottom"> Hire, Rental </a>
+        </span>
+      </li>
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="car" [popover]="popTemplate" placement="bottom"> KM, Miles Allowance </a>
+        </span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="lista-select-type">
+    <p class="paragraph-select-type">Travel</p>
+    <ul class="sub-lista-select-type">
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="travel" [popover]="popTemplate" placement="bottom"> Taxi - Local - Multiple Entry Template </a>
+        </span>
+      </li>
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="travel" [popover]="popTemplate" placement="bottom"> Rail </a>
+        </span>
+      </li>
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="travel" [popover]="popTemplate" placement="bottom"> Public, Limo & Other </a>
+        </span>
+      </li>
+      <li class="btn btn-secondary">
+        <span class="popover-wrapper">
+              <a  [popover]="popTemplate" placement="bottom" class="link-select-type" id="travel">  Taxi  </a>
+        </span>
+      </li>
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="travel" [popover]="popTemplate" placement="bottom"> Air </a>
+        </span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="lista-select-type">
+    <p class="paragraph-select-type">Other</p>
+    <ul class="sub-lista-select-type">
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="other" [popover]="popTemplate" placement="bottom"> Per Diem </a>
+        </span>
+      </li>
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="accommodation" [popover]="popTemplate" placement="bottom"> Telecom/Internet </a>
+        </span>
+      </li>
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="car" [popover]="popTemplate" placement="bottom"> Startup Allowance </a>
+        </span>
+      </li>
+      <li class="btn btn-secondary">
+          <span class="popover-wrapper">
+        <a href="#" class="link-select-type" id="meals" [popover]="popTemplate" placement="bottom"> Meals and Entertainment </a>
+        </span>
+      </li>
+    </ul>
+  </div>
+
+
+  <app-lista (insertValue) = 'recievingValue($event)'> </app-lista>   

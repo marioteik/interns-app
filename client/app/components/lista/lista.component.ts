@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -8,7 +8,6 @@ import { PARA } from '../../list.mock';
 import { fields } from '../../fields';
 import { ValorComponent } from '../valor/valor.component';
 import { NotaComponent } from '../nota/nota.component';
-
 
 @Component({
   selector: 'app-lista',
@@ -29,7 +28,7 @@ import { NotaComponent } from '../nota/nota.component';
     PARA,
     fields,
     ValorComponent,
-    NotaComponent
+    NotaComponent,
   ],
   providers: [],
 })
@@ -43,15 +42,14 @@ export class ListaComponent implements OnInit {
      this.valor = message;
   }
 
-  teste: fields[] = [
+  @Output() teste: fields[] = [
     
   ];
+    
+  j: number = 1;
 
+  @Input() 
   
-
-
-    j: number = 1;
-
   public addItem(num: number, tipo: string): void{
     for(let i = 0; i < num; i++){
       this.teste.push(
