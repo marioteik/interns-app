@@ -5,8 +5,8 @@
             <datalist id="suggestions">
                 <option class="pessoaOption" *ngFor='let p of pessoas' value="{{p}}">
             </datalist>
-            <button (click)="addPessoa()">Adicionar</button>
             <input placeholder="EID" id="color" list="suggestions" [(ngModel)]="pessoa" name="nome" (input)="escolhePessoa(nome.value)">
+            <button (click)="addPessoa()">Adicionar</button>
         </div>
 
         <div class="pessoasAdicionadas">
