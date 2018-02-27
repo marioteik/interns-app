@@ -6,6 +6,7 @@ import { AuthService } from './services/auth.service';
   templateUrl: './app.component.html'
 })
 export class AppComponent implements AfterViewChecked {
+  printValue :string = '' ;
 
   constructor(public auth: AuthService,
               private changeDetector: ChangeDetectorRef) { }
@@ -14,5 +15,7 @@ export class AppComponent implements AfterViewChecked {
   ngAfterViewChecked() {
     this.changeDetector.detectChanges();
   }
-
+onDateSend (message:string) {
+this.printValue = message;
+}
 }

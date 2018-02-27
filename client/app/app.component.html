@@ -46,5 +46,6 @@
   </nav>
 
   <router-outlet></router-outlet> -->
-<app-datepickerbegin></app-datepickerbegin>
+  {{printValue}}
+<app-datepickerbegin (dateSend) = "onDateSend($event)"></app-datepickerbegin>
 </div>
