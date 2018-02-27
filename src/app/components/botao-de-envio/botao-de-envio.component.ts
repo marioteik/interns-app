@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Alert } from 'selenium-webdriver';
 
 @Component({
   selector: 'app-botao-de-envio',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BotaoDeEnvioComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
+ 
+  }
+
+  eventButton(){
+
   }
 
 }
