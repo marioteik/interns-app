@@ -1,31 +1,41 @@
 <div class="main-datasubmit">
-    <div class="row">
-        <div class="col-xs-6 col-6 col-md-2 form-group">
+  <div class="calendario">
 
-            <button class="arrowbutton">
-                <i class="fas fa-angle-left"></i>
-              </button>
+      <span class="arrowbutton">
+          <i class="fas fa-angle-left"></i>
+      </span>
 
-              <button class="arrowbutton">
-                <i class="fas fa-angle-right"></i>
-              </button>
+      <!-- INPUT -->
+      <input type="text"
+      class="date-calendar"
+      [minDate]="minDate"
+      [maxDate]="maxDate"
+      #dp="bsDatepicker"
+      bsDatepicker [(bsValue)]="bsValue"
+      placeholder="Selecione uma data"
+      [bsConfig]="{containerClass: 'theme-orange'}">
 
-              <form [formGroup]="myForm">
-                  <input
-                    class="form-control"
-                    [minDate]="minDate"
-                    [maxDate]="maxDate"
-                    #dp="bsDatepicker"
-                    bsDatepicker
-                    formControlName="myDate"
-                    [bsConfig]="{containerClass: 'theme-orange'}">
-                </form>
+      <span class="arrowbutton">
+          <i class="fas fa-angle-right"></i>
+      </span>
 
-        </div>
-        <div class="col-xs-6 col-6 col-md-10 form-button">
-          <button type="button" class="btn btn-outline-warning right" (click)="dp.toggle()">
-            Submit
-          </button>
-        </div>
-      </div>
+      <!-- BOTAO -->
+      <button class="toggle-calendar" (click)="dp.toggle()"></button>
+
+
+  </div>
+
+  <button class="submit-date">Submit</button>
+
+
 </div>
+
+
+
+<!-- class="form-control" 
+[minDate]="minDate" 
+ [maxDate]="maxDate" 
+#dp="bsDatepicker" 
+bsDatepicker 
+formControlName="myDate"
+[bsConfig]="{containerClass: 'theme-orange'}"> -->
