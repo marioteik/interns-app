@@ -27,6 +27,8 @@ import { DatepickerbeginComponent } from './component/datepickerbegin/datepicker
 import { NavMyteComponent } from './component/nav-myte/nav-myte.component';
 
 import { BsDropdownModule } from 'ngx-bootstrap';
+import { StartExpenseComponent } from './components/start-expense/start-expense.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -48,6 +50,7 @@ export function tokenGetter() {
     DatasubmitComponent
     DatepickerbeginComponent
     NavMyteComponent
+    StartExpenseComponent
   ],
   imports: [
     RoutingModule,
@@ -63,6 +66,8 @@ export function tokenGetter() {
       }
     })
     
+    }),
+    AppRoutingModule
   ],
   providers: [
     AuthService,
