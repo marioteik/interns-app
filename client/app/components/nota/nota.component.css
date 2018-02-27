@@ -2,8 +2,14 @@ input[type="file"] {
     display: none;
 }
 
-#funcionaporfavor{
+#icone{ 
     font-size: 25px;
     color: #FFB414;
+    text-align: center;
 }
+
+form{
+    padding-top: 13px;
+}
+
 

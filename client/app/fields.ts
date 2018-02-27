@@ -5,7 +5,8 @@ export  class fields {
         public wbs?: string,
         public valor?: number,
         public dtInicio?: string,
-        public dtFim?: string){
+        public dtFim?: string
+    ){
 
         }
 

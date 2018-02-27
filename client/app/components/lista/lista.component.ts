@@ -47,6 +47,9 @@ export class ListaComponent implements OnInit {
     
   ];
 
+  
+
+
     j: number = 1;
 
   public addItem(num: number, tipo: string): void{
