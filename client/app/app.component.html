@@ -1,25 +1,18 @@
 <div class="container">
-{{dispNumber}}
+    {{dispNumber}}
     <app-envelope (numberEnvelope)='envelopeNumb($event)'></app-envelope>
     <app-start-expense></app-start-expense>
     <app-wexpense></app-wexpense>
     <app-person-autocomplete></app-person-autocomplete>
-    
-	<app-select-type></app-select-type>
-    
 
-<-- <router-outlet></router-outlet> -->
-  <app-datepickerbegin></app-datepickerbegin>
-  <app-nav-myte></app-nav-myte>
-</div>
-  <router-outlet></router-outlet>
-<div class="container">
-  {{variableTest}}
-  {{variableTest2}}
-<app-wbs (selectionChange)='onSelectionChange($event)'></app-wbs>
-<app-modal-input (quantitySend)='onValueChange($event)'></app-modal-input>
-<app-person-autocomplete></app-person-autocomplete>
-<app-select-type></app-select-type>
+    <app-select-type></app-select-type>
 
 
+    <!-- <router-outlet></router-outlet> -->
+    <app-datepickerbegin></app-datepickerbegin>
+    <app-nav-myte></app-nav-myte>
+    <app-wbs (selectionChange)='onSelectionChange($event)'></app-wbs>
+    <app-modal-input (quantitySend)='onValueChange($event)'></app-modal-input>
+    <!-- <app-person-autocomplete></app-person-autocomplete> -->
+    <app-select-type></app-select-type>
 </div>

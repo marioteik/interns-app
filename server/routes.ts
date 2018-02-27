@@ -12,11 +12,10 @@ import DateendCtrl from './controllers/dateend';
 import Dateend from './models/dateend';
 import DateinitCtrl from './controllers/dateinit';
 import Dateinit from './models/dateinit';
-import CallIDCtrl from './models/call-id'
+import CallIDCtrl from './controllers/call-id';
 import CallID from './models/call-id';
 import PriceCtrl from './controllers/price';
 import Price from './models/price';
-
 
 
 export default function setRoutes(app) {
@@ -29,6 +28,8 @@ export default function setRoutes(app) {
   const userCtrl = new UserCtrl();
   const dateendCtrl = new DateendCtrl();
   const dateinitCtrl = new DateinitCtrl();
+  const callIDCtrl = new CallIDCtrl();
+
 
   // Person
   router.route('/persons').get(personCtrl.getAll);
@@ -50,8 +51,8 @@ export default function setRoutes(app) {
 
 
   // WBS
-  router.route('/wbs').get(wbsCtrl.getAll);
-  router.route('/wbs/count').get(wbsCtrl.count);
+  router.route('/wbss').get(wbsCtrl.getAll);
+  router.route('/wbss/count').get(wbsCtrl.count);
   router.route('/wbs').post(wbsCtrl.insert);
   router.route('/wbs/:id').get(wbsCtrl.get);
   router.route('/wbs/:id').put(wbsCtrl.update);
@@ -82,12 +83,12 @@ export default function setRoutes(app) {
   router.route('/dateinit/:id').delete(dateinitCtrl.delete);
 
   //CallID
-  router.route('/callids').get(CallIDCtrl.getAll);
-  router.route('/callids/count').get(CallIDCtrl.count);
-  router.route('/callid').post(CallIDCtrl.insert);
-  router.route('/callid/:id').get(CallIDCtrl.get);
-  router.route('/callid/:id').put(CallIDCtrl.update);
-  router.route('/callid/:id').delete(CallIDCtrl.delete);
+  router.route('/callids').get(callIDCtrl.getAll);
+  router.route('/callids/count').get(callIDCtrl.count);
+  router.route('/callid').post(callIDCtrl.insert);
+  router.route('/callid/:id').get(callIDCtrl.get);
+  router.route('/callid/:id').put(callIDCtrl.update);
+  router.route('/callid/:id').delete(callIDCtrl.delete);
 
   //dateinit - CHECK LATER
 

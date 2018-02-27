@@ -8,4 +8,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 })
 export class SelectTypeComponent implements OnInit {
 
+  ngOnInit() {
+  }
+
 }
