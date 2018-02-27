@@ -32,6 +32,13 @@ import { AppRoutingModule } from './/app-routing.module';
 import { WexpenseComponent } from './components/wexpense/wexpense.component';
 import { WbsComponent } from './components/wbs/wbs.component';
 import { ModalInputComponent } from './components/modal-input/modal-input.component';
+import { PersonAutocompleteComponent } from './components/person-autocomplete/person-autocomplete.component';
+
+// imports para filtro
+import { FormsModule  } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { FilterPipe} from './filter.pipe';
+
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -57,8 +64,12 @@ export function tokenGetter() {
     WexpenseComponent
     WbsComponent,
     ModalInputComponent
+    PersonAutocompleteComponent,
+    FilterPipe
   ],
   imports: [
+    FormsModule,
+    BrowserModule,
     RoutingModule,
     BsDatepickerModule.forRoot(),
     SharedModule,
