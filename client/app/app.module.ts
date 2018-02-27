@@ -24,6 +24,9 @@ import { DatasubmitComponent } from './components/datasubmit/datasubmit.componen
 import { BsDatepickerModule } from 'ngx-bootstrap';
 import { BsDatepickerModule } from 'ngx-bootstrap';
 import { DatepickerbeginComponent } from './component/datepickerbegin/datepickerbegin.component';
+import { NavMyteComponent } from './component/nav-myte/nav-myte.component';
+
+import { BsDropdownModule } from 'ngx-bootstrap';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -44,6 +47,7 @@ export function tokenGetter() {
     ModalinputComponent,
     DatasubmitComponent
     DatepickerbeginComponent
+    NavMyteComponent
   ],
   imports: [
     RoutingModule,
@@ -51,6 +55,7 @@ export function tokenGetter() {
     SharedModule,
     PopoverModule.forRoot(),
     BsDatepickerModule.forRoot(),
+    BsDropdownModule.forRoot(),
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
