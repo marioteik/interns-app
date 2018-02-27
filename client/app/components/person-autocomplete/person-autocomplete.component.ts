@@ -92,4 +92,8 @@ export class PersonAutocompleteComponent implements OnInit {
     this.pessoas.sort();
   }
 
+  finalizaLista() {
+    return this.escolhidos;
+  }
+
 }

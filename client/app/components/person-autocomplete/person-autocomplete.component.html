@@ -7,7 +7,7 @@
             </datalist>
             <input placeholder="EID" id="color" list="suggestions" [(ngModel)]="pessoa" name="nome" (input)="escolhePessoa(nome.value)">
             
-            <div id="finalizar">
+            <div id="finalizar" (click)="finalizaLista()">
                 <i class="fas fa-check-circle"></i>
             </div>
             <div id="botaoAdd" (click)="addPessoa()">
