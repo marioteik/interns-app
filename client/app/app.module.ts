@@ -19,6 +19,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ListaComponent } from './components/lista/lista.component';
 import { ValorComponent } from './components/valor/valor.component';
 import { NotaComponent } from './components/nota/nota.component';
+import { fields } from './fields';
 // import { WbsComponent } from './components/wbs/wbs.component';
 
 export function tokenGetter() {
@@ -40,7 +41,7 @@ export function tokenGetter() {
     // WbsComponent
     ValorComponent,
     NotaComponent,
-
+    
   ],
   imports: [
     RoutingModule,

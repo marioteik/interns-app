@@ -10,7 +10,7 @@
         <th>+ Pessoas</th>
     </tr>
 
-    <tr *ngFor="let c of par">
+    <tr *ngFor="let c of teste">
         <td>{{c.id}}</td>
         <td>{{c.tipo}}</td>
         <td>{{c.wbs}}</td>
@@ -27,3 +27,11 @@
         <td><span>icon</span></td>
     </tr>       
 </table>
+
+<button type="button" class="btn btn-dark" (click) = "addItem(1, 'Taxi')">Gerar 1 Taxi</button>
+<button type="button" class="btn btn-dark" (click) = "addItem(2, 'Apartment')">Gerar 2 Apartment </button>
+<button type="button" class="btn btn-dark" (click) = "addItem(3, 'Parking')">Gerar 3 Parking</button>
+
+
+
+

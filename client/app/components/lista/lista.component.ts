@@ -43,7 +43,20 @@ export class ListaComponent implements OnInit {
      this.valor = message;
   }
 
-  par = PARA;
+  teste: fields[] = [
+    
+  ];
+
+    j: number = 1;
+
+  public addItem(num: number, tipo: string): void{
+    for(let i = 0; i < num; i++){
+      this.teste.push(
+        new fields(this.j, tipo, )
+      )
+      this.j ++;
+    } 
+  }
 
   constructor() { 
   }
