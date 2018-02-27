@@ -13,10 +13,8 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-<<<<<<< HEAD
 import { EnvelopeComponent } from './components/envelope/envelope.component';
-import { ModalinputComponent } from './components/modalinput/modalinput.component';
-import { PopoverModule } from 'ngx-bootstrap';
+import { ModalInputComponent } from './components/modal-input/modal-input.component';
 import { DatasubmitComponent } from './components/datasubmit/datasubmit.component';
 import { BsDatepickerModule } from 'ngx-bootstrap';
 import { DatepickerbeginComponent } from './component/datepickerbegin/datepickerbegin.component';
@@ -27,7 +25,6 @@ import { StartExpenseComponent } from './components/start-expense/start-expense.
 import { AppRoutingModule } from './/app-routing.module';
 import { WexpenseComponent } from './components/wexpense/wexpense.component';
 import { WbsComponent } from './components/wbs/wbs.component';
-import { ModalInputComponent } from './components/modal-input/modal-input.component';
 import { PersonAutocompleteComponent } from './components/person-autocomplete/person-autocomplete.component';
 
 // imports para filtro
@@ -35,7 +32,6 @@ import { FormsModule  } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { FilterPipe} from './filter.pipe';
 
-import { SelectTypeComponent } from './select-type-component/select-type.component';
 import { ListaComponent } from './components/lista/lista.component';
 import { ValorComponent } from './components/valor/valor.component';
 import { NotaComponent } from './components/nota/nota.component';
@@ -58,7 +54,6 @@ export function tokenGetter() {
     AdminComponent,
     NotFoundComponent,
     EnvelopeComponent,
-    ModalinputComponent,
     DatasubmitComponent,
     DatepickerbeginComponent,
     NavMyteComponent,
@@ -68,11 +63,11 @@ export function tokenGetter() {
     ModalInputComponent,
     PersonAutocompleteComponent,
     FilterPipe,
-    SelectTypeComponent
+    SelectTypeComponent,
     ListaComponent,
     ValorComponent,
     NotaComponent,
-    SelectTypeComponent  
+    SelectTypeComponent
   ],
   imports: [
     FormsModule,
