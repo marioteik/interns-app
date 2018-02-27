@@ -22,6 +22,8 @@ import { ModalinputComponent } from './components/modalinput/modalinput.componen
 import { PopoverModule } from 'ngx-bootstrap';
 import { DatasubmitComponent } from './components/datasubmit/datasubmit.component';
 import { BsDatepickerModule } from 'ngx-bootstrap';
+import { BsDatepickerModule } from 'ngx-bootstrap';
+import { DatepickerbeginComponent } from './component/datepickerbegin/datepickerbegin.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -41,9 +43,11 @@ export function tokenGetter() {
     EnvelopeComponent
     ModalinputComponent,
     DatasubmitComponent
+    DatepickerbeginComponent
   ],
   imports: [
     RoutingModule,
+    BsDatepickerModule.forRoot(),
     SharedModule,
     PopoverModule.forRoot(),
     BsDatepickerModule.forRoot(),
@@ -53,6 +57,7 @@ export function tokenGetter() {
         // whitelistedDomains: ['localhost:3000', 'localhost:4200']
       }
     })
+    
   ],
   providers: [
     AuthService,
