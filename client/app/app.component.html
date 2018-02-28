@@ -1,5 +1,4 @@
 <div class="container">
-    <!-- {{dispNumber}} -->
     <app-nav-myte></app-nav-myte>
     <app-envelope (numberEnvelope)='envelopeNumb($event)'></app-envelope>
     <app-modal-input (quantitySend)='onValueChange($event)'></app-modal-input>
@@ -15,5 +14,6 @@
     <app-qrcode></app-qrcode>
 
     <app-total-notas></app-total-notas>
+    <app-botao-de-envio></app-botao-de-envio>
     <router-outlet></router-outlet>
 </div>
