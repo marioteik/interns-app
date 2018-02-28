@@ -1,5 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-
+import { NgModel, FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-datepickerbegin',
@@ -7,26 +7,35 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./datepickerbegin.component.css']
 })
 export class DatepickerbeginComponent implements OnInit {
-  minDate: Date;
-  maxDate: Date;
-  divToChange=document.getElementById('form-control');
-  onDateSelected() {
-    return "#e5e5e5";
-  }
-  @Output() dateSend: EventEmitter<any> = new EventEmitter<any>();
+maxDate: Date;
+minDate: Date;
+public date: Date;
+public myGroup;
+public myForm: FormGroup;
 
-  onDateInput(valueEmited:string) {
-    this.dateSend.emit(valueEmited);
-  }
-  constructor() { 
-    this.minDate= new Date();
-    this.minDate.setDate(this.minDate.getDate() -60);
-    this.maxDate= new Date();
-    this.maxDate.setDate(this.minDate.getDate()-2);
-  }
 
-  ngOnInit() {
-  }
+onDateSelected() {
+console.log(this.date);
+}
+
+onSubmit() {
+console.log(this.myForm.value);
 
 }
 
+constructor(private _fb: FormBuilder) {
+this.maxDate = new Date();
+this.maxDate.setDate(this.maxDate.getDate());
+this.minDate=new Date();
+this.minDate.setDate(this.minDate.getDate()-60);
+}
+
+ngOnInit() {
+
+this.myForm = this._fb.group({
+myDate: ['', <any>Validators.required]
+});
+
+}
+
+} 

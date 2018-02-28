@@ -19,6 +19,7 @@ import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { BsDatepickerModule } from 'ngx-bootstrap';
 import { DatepickerbeginComponent } from './component/datepickerbegin/datepickerbegin.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -42,6 +43,7 @@ export function tokenGetter() {
     RoutingModule,
     BsDatepickerModule.forRoot(),
     SharedModule,
+    ReactiveFormsModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
