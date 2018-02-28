@@ -1,0 +1,37 @@
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Tipo</th>
+        <th>WBS</th>
+        <th id="valor">Valor</th>
+        <th>Data inicio</th>
+        <th>Data fim</th>
+        <th>Nota</th>
+        <th>+ Pessoas</th>
+    </tr>
+
+    <tr *ngFor="let c of teste" id={{c.id}}>
+        <td>{{c.id}}</td>
+        <td>{{c.tipo}}</td>
+        <td>{{c.wbs}}
+            <app-wbs (selectionChange)='onSelectionChange($event)'></app-wbs>
+        </td>
+        <td>
+            <app-valor (insertValue)='onValueInserted($event)'></app-valor>
+        </td>
+        <td>{{c.dtInicio}}
+            <app-datepickerbegin (dateSend)="onDateSend($event)"></app-datepickerbegin>
+        </td>
+        <td>{{c.dtFim}}
+            <app-datepickerbegin (dateSend)="onDateSend($event)"></app-datepickerbegin>
+        </td>
+        <td>
+            <app-nota></app-nota>
+        </td>
+        <td><span>icon</span></td>
+    </tr>
+</table>
+
+<button type="button" class="btn btn-dark" (click)="addItem(1, 'Taxi')">Gerar 1 Taxi</button>
+<button type="button" class="btn btn-dark" (click)="addItem(2, 'Apartment')">Gerar 2 Apartment </button>
+<button type="button" class="btn btn-dark" (click)="addItem(3, 'Parking')">Gerar 3 Parking</button>{{valor}}

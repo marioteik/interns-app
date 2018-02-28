@@ -20,7 +20,6 @@ import ExpenseCtrl from './controllers/expense';
 import Expense from './models/expense'
 
 
-
 export default function setRoutes(app) {
 
   const router = express.Router();
@@ -34,6 +33,7 @@ export default function setRoutes(app) {
   const callIDCtrl = new CallIDCtrl();
   const priceCtrl = new PriceCtrl();
   const expenseCtrl = new ExpenseCtrl();
+
 
   // Person
   router.route('/persons').get(personCtrl.getAll);
@@ -62,7 +62,7 @@ export default function setRoutes(app) {
   router.route('/wbs/:id').put(wbsCtrl.update);
   router.route('/wbs/:id').delete(wbsCtrl.delete);
 
-  //Type
+  // Type
   router.route('/types').get(typeCtrl.getAll);
   router.route('/types/count').get(typeCtrl.count);
   router.route('/type').post(typeCtrl.insert);
@@ -70,7 +70,7 @@ export default function setRoutes(app) {
   router.route('/type/:id').put(typeCtrl.update);
   router.route('/type/:id').delete(typeCtrl.delete);
 
-  //Dateend
+  // Dateend
   router.route('/dateends').get(dateendCtrl.getAll);
   router.route('/dateends/count').get(dateendCtrl.count);
   router.route('/dateend').post(dateendCtrl.insert);
@@ -78,7 +78,7 @@ export default function setRoutes(app) {
   router.route('/dateend/:id').put(dateendCtrl.update);
   router.route('/dateend/:id').delete(dateendCtrl.delete);
 
-  //dateinit
+  // dateinit
   router.route('/dateinits').get(dateinitCtrl.getAll);
   router.route('/dateinits/count').get(dateinitCtrl.count);
   router.route('/dateinit').post(dateinitCtrl.insert);
@@ -86,7 +86,7 @@ export default function setRoutes(app) {
   router.route('/dateinit/:id').put(dateinitCtrl.update);
   router.route('/dateinit/:id').delete(dateinitCtrl.delete);
 
-  //CallID
+  // CallID
   router.route('/callids').get(callIDCtrl.getAll);
   router.route('/callids/count').get(callIDCtrl.count);
   router.route('/callid').post(callIDCtrl.insert);
@@ -94,8 +94,7 @@ export default function setRoutes(app) {
   router.route('/callid/:id').put(callIDCtrl.update);
   router.route('/callid/:id').delete(callIDCtrl.delete);
 
-  //dateinit - CHECK LATER
-
+  // dateinit - CHECK LATER
   router.route('/prices').get(priceCtrl.getAll);
   router.route('/prices/count').get(priceCtrl.count);
   router.route('/price').post(priceCtrl.insert);

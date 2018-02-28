@@ -1,0 +1,71 @@
+.popup-add-person {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.pessoaOption {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.pessoaOption:hover {
+  background: #e5e5e5;
+}
+
+.pessoasAdicionadas {
+  background: #f0f0f0;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 80%;
+}
+
+.nomeDaPessoa {
+  width: auto;
+}
+
+.excluirPessoa {
+  margin: 0px 5px 0px 5px;
+  float: right;
+}
+
+.nomeEscolhido {
+  padding: 5px;
+  margin: 0;
+}
+
+#color {
+  min-width: 80%;
+  max-width: 100%;
+  width: auto;
+}
+
+.nomeEscolhido:hover {
+  background: #e8e8e8;
+}
+
+#botaoAdd {
+  padding: 0;
+  margin: 0;
+  float: right;
+  font-size: 200%;
+  color: #FF5800;
+  margin-right: 2%;
+  margin-top: -1%;
+}
+
+#botaoAdd:hover {
+  color:#ff8022;
+}
+
+#finalizar {
+  padding: 0;
+  margin: 0;
+  float: right;
+  font-size: 200%;
+  color: #FF5800;
+  margin-top: -1%;
+}
+
+#finalizar:hover {
+  color: #33ff33;
+}

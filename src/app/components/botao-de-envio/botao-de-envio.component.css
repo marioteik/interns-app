@@ -1,0 +1,12 @@
+.buttonenter{
+    border-style: solid;
+    background: none;
+    border-width: 2px;
+    border-color: #FFB414;
+    float: right;
+    width: 90px;
+    height: 50px;
+    color: #FFB414;
+    font-size: 12px;
+    font-family: Segoe UI;
+    }

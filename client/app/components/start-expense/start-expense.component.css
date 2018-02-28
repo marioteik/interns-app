@@ -1,0 +1,25 @@
+.conteudopagina {
+    text-align: center;
+    margin: 10px;
+    
+    
+}
+.figura {
+    font-size:50px; 
+    color:#FFB414;
+    margin-right: 0 auto;
+    margin-bottom: 0;
+}
+.button {
+    color: white;
+    background: #FFB414;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+    font-family: 'Segoe UI Light', 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+.mensagem{
+    font-size: 12px;
+    font: Segoe UI Light;
+}
