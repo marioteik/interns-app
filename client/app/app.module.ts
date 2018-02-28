@@ -15,6 +15,8 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NotaService } from './services/nota-service.service';
+import { HttpModule } from '@angular/http';
 import { EnvelopeComponent } from './components/envelope/envelope.component';
 import { ModalInputComponent } from './components/modal-input/modal-input.component';
 import { DatasubmitComponent } from './components/datasubmit/datasubmit.component';
@@ -57,7 +59,9 @@ export function tokenGetter() {
     LogoutComponent,
     AdminComponent,
     NotFoundComponent,
-    EnvelopeComponent,
+    
+    
+    ,
     DatasubmitComponent,
     DatepickerbeginComponent,
     NavMyteComponent,
@@ -83,6 +87,7 @@ export function tokenGetter() {
     AppRoutingModule,
     BsDatepickerModule.forRoot(),
     SharedModule,
+    HttpModule,
     NgxQRCodeModule,
     PopoverModule.forRoot(),
     BsDatepickerModule.forRoot(),
@@ -100,7 +105,8 @@ export function tokenGetter() {
     AuthGuardLogin,
     AuthGuardAdmin,
     CatService,
-    UserService
+    UserService,
+    NotaService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]

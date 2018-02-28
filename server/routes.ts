@@ -12,10 +12,12 @@ import DateendCtrl from './controllers/dateend';
 import Dateend from './models/dateend';
 import DateinitCtrl from './controllers/dateinit';
 import Dateinit from './models/dateinit';
-import CallIDCtrl from './controllers/call-id';
+import CallIDCtrl from './controllers/call-id'
 import CallID from './models/call-id';
 import PriceCtrl from './controllers/price';
 import Price from './models/price';
+import ExpenseCtrl from './controllers/expense';
+import Expense from './models/expense'
 
 
 export default function setRoutes(app) {
@@ -29,6 +31,8 @@ export default function setRoutes(app) {
   const dateendCtrl = new DateendCtrl();
   const dateinitCtrl = new DateinitCtrl();
   const callIDCtrl = new CallIDCtrl();
+  const priceCtrl = new PriceCtrl();
+  const expenseCtrl = new ExpenseCtrl();
 
 
   // Person
@@ -91,13 +95,21 @@ export default function setRoutes(app) {
   router.route('/callid/:id').delete(callIDCtrl.delete);
 
   // dateinit - CHECK LATER
+  router.route('/prices').get(priceCtrl.getAll);
+  router.route('/prices/count').get(priceCtrl.count);
+  router.route('/price').post(priceCtrl.insert);
+  router.route('/price/:id').get(priceCtrl.get);
+  router.route('/price/:id').put(priceCtrl.update);
+  router.route('/price/:id').delete(priceCtrl.delete);
 
-  /*router.route('/prices').get(PriceCtrl.getAll);
-  router.route('/prices/count').get(PriceCtrl.count);
-  router.route('/price').post(PriceCtrl.insert);
-  router.route('/price/:id').get(PriceCtrl.get);
-  router.route('/price/:id').put(PriceCtrl.update);
-  router.route('/price/:id').delete(PriceCtrl.delete);*/
+  //dateinit - CHECK LATER
+
+  router.route('/expenses').get(expenseCtrl.getAll);
+  router.route('/expenses/count').get(expenseCtrl.count);
+  router.route('/expense').post(expenseCtrl.insert);
+  router.route('/expense/:id').get(expenseCtrl.get);
+  router.route('/expense/:id').put(expenseCtrl.update);
+  router.route('/expense/:id').delete(expenseCtrl.delete);
 
   // Apply the routes to our application with the prefix /api
   app.use('/api', router);
