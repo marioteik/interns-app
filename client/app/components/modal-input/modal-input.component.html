@@ -1,5 +1,0 @@
-<button (click)="showPopover = !showPopover" class="btn">Open</button>
-
-<div *ngIf="showPopover" class="popOver">
-<input #q type="text" name="quantity" id="quantityInput" placeholder="Digite a quantidade" [(ngModel)]="value" (change)="displayValue($event.target.value)">
-</div>
