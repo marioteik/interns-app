@@ -1,6 +1,8 @@
 <div class="envelope">
-    <app-qrcode></app-qrcode>
+
     <label class="name">Envelope</label>
     <input class="box" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
           type="text"   placeholder="Insira o número aqui" (input)="NumberEnv($event.target.value)">
+    <app-qrcode></app-qrcode>
+    <app-datasubmit></app-datasubmit>
 </div>

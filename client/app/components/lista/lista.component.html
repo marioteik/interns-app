@@ -19,8 +19,12 @@
         <td>
             <app-valor (insertValue)='onValueInserted($event)'></app-valor>
         </td>
-        <td>{{c.dtInicio}}</td>
-        <td>{{c.dtFim}}</td>
+        <td>{{c.dtInicio}}
+            <app-datepickerbegin (dateSend)="onDateSend($event)"></app-datepickerbegin>
+        </td>
+        <td>{{c.dtFim}}
+            <app-datepickerbegin (dateSend)="onDateSend($event)"></app-datepickerbegin>
+        </td>
         <td>
             <app-nota></app-nota>
         </td>
