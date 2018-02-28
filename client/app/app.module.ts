@@ -1,5 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { JwtModule } from '@auth0/angular-jwt';
+import { NgxQRCodeModule } from 'ngx-qrcode2';
+
 import { RoutingModule } from './routing.module';
 import { SharedModule } from './shared/shared.module';
 import { CatService } from './services/cat.service';
@@ -39,6 +41,7 @@ import { fields } from './fields';
 import { PopoverModule } from 'ngx-bootstrap';
 // import { WbsComponent } from './components/wbs/wbs.component';
 import { SelectTypeComponent } from './components/select-type-component/select-type.component';
+import { QrcodeComponent } from './components/qrcode/qrcode.component';
 
 
 export function tokenGetter() {
@@ -67,7 +70,9 @@ export function tokenGetter() {
     ListaComponent,
     ValorComponent,
     NotaComponent,
-    SelectTypeComponent
+    SelectTypeComponent,
+    QrcodeComponent,
+    
   ],
   imports: [
     FormsModule,
@@ -76,12 +81,14 @@ export function tokenGetter() {
     AppRoutingModule,
     BsDatepickerModule.forRoot(),
     SharedModule,
+    NgxQRCodeModule,
     PopoverModule.forRoot(),
     BsDatepickerModule.forRoot(),
     BsDropdownModule.forRoot(),
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
+        
         // whitelistedDomains: ['localhost:3000', 'localhost:4200']
       }
     })
