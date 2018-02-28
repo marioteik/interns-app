@@ -17,6 +17,8 @@ import { LogoutComponent } from './logout/logout.component';
 import { AccountComponent } from './account/account.component';
 import { AdminComponent } from './admin/admin.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NotaService } from './services/nota-service.service';
+import { HttpModule } from '@angular/http';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -37,6 +39,7 @@ export function tokenGetter() {
   imports: [
     RoutingModule,
     SharedModule,
+    HttpModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,
@@ -49,7 +52,8 @@ export function tokenGetter() {
     AuthGuardLogin,
     AuthGuardAdmin,
     CatService,
-    UserService
+    UserService,
+    NotaService
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import * as mongoose from 'mongoose';
 
 const typeSchema = new mongoose.Schema({
+  id: Number,
   name: String,
   subtype:{subname: String}
 });

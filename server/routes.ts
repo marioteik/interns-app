@@ -16,6 +16,8 @@ import CallIDCtrl from './controllers/call-id'
 import CallID from './models/call-id';
 import PriceCtrl from './controllers/price';
 import Price from './models/price';
+import ExpenseCtrl from './controllers/expense';
+import Expense from './models/expense'
 
 
 
@@ -31,6 +33,7 @@ export default function setRoutes(app) {
   const dateinitCtrl = new DateinitCtrl();
   const callIDCtrl = new CallIDCtrl();
   const priceCtrl = new PriceCtrl();
+  const expenseCtrl = new ExpenseCtrl();
 
   // Person
   router.route('/persons').get(personCtrl.getAll);
@@ -102,12 +105,12 @@ export default function setRoutes(app) {
 
   //dateinit - CHECK LATER
 
-  /*router.route('/expensess').get(expensesCtrl.getAll);
-  router.route('/expensess/count').get(expensesCtrl.count);
-  router.route('/expenses').post(expensesCtrl.insert);
-  router.route('/expenses/:id').get(expensesCtrl.get);
-  router.route('/expenses/:id').put(expensesCtrl.update);
-  router.route('/expenses/:id').delete(expensesCtrl.delete);*/
+  router.route('/expenses').get(expenseCtrl.getAll);
+  router.route('/expenses/count').get(expenseCtrl.count);
+  router.route('/expense').post(expenseCtrl.insert);
+  router.route('/expense/:id').get(expenseCtrl.get);
+  router.route('/expense/:id').put(expenseCtrl.update);
+  router.route('/expense/:id').delete(expenseCtrl.delete);
 
   // Apply the routes to our application with the prefix /api
   app.use('/api', router);
