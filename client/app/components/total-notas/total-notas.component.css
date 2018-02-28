@@ -1,0 +1,20 @@
+.primeiraLinha {
+    background:#ffb414;
+    height:30px;
+    width:800px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.segundaLinha{
+    background: rgb(242,242,242);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Coluna{
+    width: 250px;
+    padding-left: 20px;
+}
+.Coluna3{
+    width: 300px;
+    text-align: right;
+    padding-right: 20px;
+}

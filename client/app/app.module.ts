@@ -43,6 +43,7 @@ import { PopoverModule } from 'ngx-bootstrap';
 import { SelectTypeComponent } from './components/select-type-component/select-type.component';
 import { QrcodeComponent } from './components/qrcode/qrcode.component';
 
+import { TotalNotasComponent } from './components/total-notas/total-notas.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -72,7 +73,8 @@ export function tokenGetter() {
     NotaComponent,
     SelectTypeComponent,
     QrcodeComponent,
-    
+    TotalNotasComponent,
+    NotFoundComponent
   ],
   imports: [
     FormsModule,
