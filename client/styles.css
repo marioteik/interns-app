@@ -1,4 +1,11 @@
-/* You can add global styles to this file, and also import other style files
+/* You can add global styles to this file, and also import other style files */
+
+*{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin-top: 15px;
   margin-bottom: 10px;
@@ -6,4 +13,8 @@ body {
 
 .input-group {
   margin-bottom: 15px;ng 
-}-->*/
+}
+
+ul{
+  margin: 0;
+}
