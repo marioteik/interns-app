@@ -1,0 +1,33 @@
+html{
+    height: 100%;
+}
+
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  } 
+
+
+#container{
+    background-color: gainsboro;
+    width: 100%;
+    height: 720px;
+    margin-top: 0px; 
+    top: fixed;
+}
+
+
+#scnd-container{
+    position: relative;
+    /* border: 1px solid red;*/
+    margin-left: 0;
+    height: 559px;
+    width: 875px;
+    top: 20%;
+    left: 27%;
+    background-color: white;
+}

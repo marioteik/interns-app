@@ -7,9 +7,12 @@
 }
 
 .main-lista-select-type{
-    width: 100;
-    max-width: 1080px;
-    min-width: 1037px;
+    position: relative;
+    left: 10px;
+    width: 860px;
+    height: 300px;
+    /* max-width: 850px; */
+    /* min-width: 1037px; */
 }
 
 #accommodation{
@@ -17,7 +20,25 @@
 }
 
 #car{
+
     color: #ffb414;
+}
+
+#acom-div{
+    width: 140px;
+}
+
+#car-div{
+    width: 200px;
+}
+
+#otr-div{
+    margin-left: 5px;  
+    width: 260px;
+}
+
+#trv-div{
+    width: 245px;
 }
 
 #travel{
@@ -37,6 +58,9 @@
 }
 
 #title-select-type{
+    position: relative;
+    top: 10px;
+    left: 10px;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }

@@ -1,5 +1,4 @@
-<div class="container">
-
+<div id="container">
   <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,7 +36,8 @@
           </a>
         </li>
         <li class="nav-item">
-          <a routerLink="/logout" class="nav-link" routerLinkActive="active" *ngIf="auth.loggedIn">
+          <a routerLink="/logout" class="nav
+          -link" routerLinkActive="active" *ngIf="auth.loggedIn">
             <i class="fa fa-sign-out"></i> Logout
           </a>
         </li>
@@ -47,24 +47,27 @@
 
   <router-outlet></router-outlet> -->
 
-   <!-- <p> fdf {{valor.valor}}</p> -->
-
-<app-select-type-component></app-select-type-component> 
-
-<!-- <app-lista (insertValue) = 'recievingValue($event)'> </app-lista>   -->
+  <!-- <p> fdf {{valor.valor}}</p> -->
 
 
+  <div id="scnd-container">
+      <app-select-type-component></app-select-type-component> 
+  </div>
 
-<!-- <app-valor>
+<!--  -->
+
+
+  <!-- <app-lista (insertValue) = 'recievingValue($event)'> </app-lista>   -->
+
+
+
+  <!-- <app-valor>
 
 </app-valor> -->
 
 
 
-<!-- <app-wbs>
+  <!-- <app-wbs>
 </app-wbs> -->
-  
+
 </div>
-
-
-

@@ -1,0 +1,25 @@
+.waitingContainer {
+    text-align: center; 
+    margin-top: 150px; 
+    color: black;
+    font-size: 20px;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;;
+    vertical-align: middle;
+}
+
+.border{ 
+    width: 800px;
+    height: 350px;
+    border-style: solid;
+    border-width: 2px;
+    position: fixed;
+    border-color:#E5E5E5;
+    display: table-cell;
+    left: 29%;
+    margin-top: 137px;
+    top: fixed;
+    bottom: fixed;
+    right: 25%;
+
+}
+ 

@@ -1,21 +1,16 @@
-
-
 <ng-template #popTemplate>
   <input type="number" min="0"/>
 </ng-template>
 
 <!-- add '[popover]="popTemplate"' on <a> tag of <li> itens to insert popOver -->
-
-
-<app-loading [condition]="isLoading"></app-loading>
-
+<!-- <app-loading [condition]="isLoading"></app-loading> -->
 <!-- <app-toast [message]="toast.message"></app-toast> -->
 
 <p id="title-select-type">Select Type</p>
 
 <div class="main-lista-select-type">
 
-  <div class="lista-select-type">
+  <div id="acom-div" class="lista-select-type">
     <p class="paragraph-select-type">Accommodation</p>
     <ul class="sub-lista-select-type">
       <li class="btn btn-secondary" (click)="ServiceTest.addItem('Apartment')">
@@ -31,7 +26,7 @@
     </ul>
   </div>
 
-  <div class="lista-select-type">
+  <div id="car-div" class="lista-select-type">
     <p class="paragraph-select-type">Car</p>
     <ul class="sub-lista-select-type">
       <li class="btn btn-secondary">
@@ -52,7 +47,7 @@
     </ul>
   </div>
 
-  <div class="lista-select-type">
+  <div class="lista-select-type" id="trv-div">
     <p class="paragraph-select-type">Travel</p>
     <ul class="sub-lista-select-type">
       <li class="btn btn-secondary" (click)="ServiceTest.addItem('Taxi - Local - Multiple Entry Template')">
@@ -83,7 +78,7 @@
     </ul>
   </div>
 
-  <div class="lista-select-type">
+  <div id="otr-div"  class="lista-select-type">
     <p class="paragraph-select-type">Other</p>
     <ul class="sub-lista-select-type">
       <li class="btn btn-secondary" (click)="ServiceTest.addItem('Per Diem')">
@@ -108,5 +103,7 @@
       </li>
     </ul>
   </div>
+
+  <app-wexpense *ngIf="!ServiceTest.hidden"></app-wexpense>
 
   <app-lista *ngIf="ServiceTest.hidden" (insertValue) = 'recievingValue($event)'></app-lista>   
