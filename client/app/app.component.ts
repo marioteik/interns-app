@@ -8,22 +8,26 @@ import { NgModel } from '@angular/forms';
   templateUrl: './app.component.html'
 })
 export class AppComponent implements AfterViewChecked {
+  printValue: string;
+  valor = ValorComponent;
+  test = ' ';
+
   dispNumber = '';
-  envelopeNumb (eNumber: string) {
+  envelopeNumb(eNumber: string) {
     this.dispNumber = eNumber;
   }
 
-  valor = ValorComponent;
-  
-  test = ' ';
-  recievingValue(message: string){
+  recievingValue(message: string) {
     this.test = message;
   }
 
   constructor(public auth: AuthService,
-              private changeDetector: ChangeDetectorRef) { }
+    private changeDetector: ChangeDetectorRef) { }
 
   ngAfterViewChecked() {
     this.changeDetector.detectChanges();
+  }
+  onDateSend(message: string) {
+    this.printValue = message;
   }
 }

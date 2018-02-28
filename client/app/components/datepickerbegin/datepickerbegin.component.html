@@ -10,7 +10,9 @@
         formControlName="myDate"
         [bsConfig]="{ dateInputFormat: 'DD/MM/YYYY', containerClass:'theme-orange'}"
         (bsValueChange)="onDateSelected($event,bsValue)"
+        
         [style.background-color]="onDateSelected()"
+        (click) ="onDateInput($event.target.value)"
         >
 
     </form>

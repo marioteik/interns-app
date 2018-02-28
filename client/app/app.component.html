@@ -12,8 +12,9 @@
     <app-select-type-component> </app-select-type-component>
     <app-start-expense></app-start-expense>
 
-    <router-outlet></router-outlet>
     <app-qrcode></app-qrcode>
 
-<app-total-notas></app-total-notas>
+	<app-total-notas></app-total-notas>
+  	<router-outlet></router-outlet> -->
+	<app-datepickerbegin (dateSend) = "onDateSend($event)"></app-datepickerbegin>
 </div>
