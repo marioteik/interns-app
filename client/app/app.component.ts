@@ -21,9 +21,10 @@ export class AppComponent implements AfterViewChecked {
   handleInputChange(event){
     let response;
     let nota: Nota = new Nota;
+    console.log("carregando imagem...");
     nota.image = btoa(event.target.files[0]);
     console.log(nota.image);
-
+    console.log("imagem carregada")
     response = this.notaService.envia_nota(nota);
   }
 

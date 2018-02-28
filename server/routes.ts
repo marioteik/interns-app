@@ -17,7 +17,9 @@ import CallID from './models/call-id';
 import PriceCtrl from './controllers/price';
 import Price from './models/price';
 import ExpenseCtrl from './controllers/expense';
-import Expense from './models/expense'
+import Expense from './models/expense';
+import NotaCtrl from './controllers/nota';
+import Nota from './models/nota'
 
 
 
@@ -34,6 +36,7 @@ export default function setRoutes(app) {
   const callIDCtrl = new CallIDCtrl();
   const priceCtrl = new PriceCtrl();
   const expenseCtrl = new ExpenseCtrl();
+  const notaCtrl = new NotaCtrl();
 
   // Person
   router.route('/persons').get(personCtrl.getAll);
@@ -111,6 +114,17 @@ export default function setRoutes(app) {
   router.route('/expense/:id').get(expenseCtrl.get);
   router.route('/expense/:id').put(expenseCtrl.update);
   router.route('/expense/:id').delete(expenseCtrl.delete);
+
+  //dateinit - CHECK LATER
+
+  router.route('/notas').get(notaCtrl.getAll);
+  router.route('/notas/count').get(notaCtrl.count);
+  router.route('/nota').post(notaCtrl.insert);
+  router.route('/nota/:id').get(notaCtrl.get);
+  router.route('/nota/:id').put(notaCtrl.update);
+  router.route('/nota/:id').delete(notaCtrl.delete);
+  
+  
 
   // Apply the routes to our application with the prefix /api
   app.use('/api', router);

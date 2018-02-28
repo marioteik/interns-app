@@ -1,7 +1,7 @@
 import * as mongoose from 'mongoose';
  
 const notaSchema = new mongoose.Schema({
-img: Buffer
+img: String
 //NOT TESTED//
 });
  

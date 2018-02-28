@@ -3,12 +3,14 @@ import { Http, Headers, Response } from '@angular/http'
 import { Nota } from '../shared/models/nota.model';
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/toPromise';
- 
+
+
 @Injectable()
-export class NotaService {
- 
-private url = "http://localhost:3000/api/notas";
-private headers: Headers = new Headers({ 'Content-Type': 'application/json' });
+export class NotaService { 
+private url = "http://localhost:3000/api/nota";
+private headers: Headers = new Headers({ 
+    'Content-Type': 'application/json',
+ });
 constructor(private http: Http) { }
  
 envia_nota(nota: Nota): Promise<Nota> {
@@ -16,6 +18,8 @@ return this.http.post(this.url, JSON.stringify(nota))
 .toPromise()
 .then(response => response.json().data as Nota)
 .catch(this.handleError);
+
+console.log("Nota enviada");
 }
  
 // return this.http.get(
