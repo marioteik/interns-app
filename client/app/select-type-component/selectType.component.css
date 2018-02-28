@@ -1,39 +1,39 @@
-.main-lista-select-type{
+.main-lista-select-type {
     width: 100;
     max-width: 1080px;
     min-width: 1037px;
 }
 
-#accommodation{
+#accommodation {
     color: #890078;
 }
 
-#car{
+#car {
     color: #ffb414;
 }
 
-#travel{
+#travel {
     color: #008c95;
 }
 
-#id{
+#id {
     color: 4b912a;
 }
 
-#meals{
+#meals {
     color: #c80000;
 }
 
-#other{
+#other {
     color: #4b912a;
 }
 
-#title-select-type{
+#title-select-type {
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
 
-.lista-select-type{
+.lista-select-type {
     float: left;
     width: 25%;
     text-decoration-style: none;
@@ -41,23 +41,20 @@
     text-decoration-line: none;
     /* margin: 0.2rem;
     margin-left: .2rem; */
-   
 }
 
-.sub-lista-select-type{
+.sub-lista-select-type {
     padding: 0;
     color: white;
 }
 
-.link-select-type{
+.link-select-type {
     text-decoration: none;
     color: white;
     font-size: 70%;
 }
 
-
-.paragraph-select-type{
+.paragraph-select-type {
     font-size: 75%;
     text-align: left;
 }
-

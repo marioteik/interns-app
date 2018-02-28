@@ -17,8 +17,8 @@ import { EnvelopeComponent } from './components/envelope/envelope.component';
 import { ModalInputComponent } from './components/modal-input/modal-input.component';
 import { DatasubmitComponent } from './components/datasubmit/datasubmit.component';
 import { BsDatepickerModule } from 'ngx-bootstrap';
-import { DatepickerbeginComponent } from './component/datepickerbegin/datepickerbegin.component';
-import { NavMyteComponent } from './component/nav-myte/nav-myte.component';
+import { DatepickerbeginComponent } from './components/datepickerbegin/datepickerbegin.component';
+import { NavMyteComponent } from './components/nav-myte/nav-myte.component';
 
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { StartExpenseComponent } from './components/start-expense/start-expense.component';

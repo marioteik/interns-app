@@ -1,15 +1,16 @@
 <div class="container">
     {{dispNumber}}
     <app-nav-myte></app-nav-myte>
-    <!-- <app-envelope (numberEnvelope)='envelopeNumb($event)'></app-envelope> -->
-    <!-- <app-start-expense></app-start-expense>
-    <app-wexpense></app-wexpense>
-    <app-person-autocomplete></app-person-autocomplete>
-
-    <app-datepickerbegin></app-datepickerbegin>
-    <app-wbs (selectionChange)='onSelectionChange($event)'></app-wbs>-->
+    <app-envelope (numberEnvelope)='envelopeNumb($event)'></app-envelope>
     <app-modal-input (quantitySend)='onValueChange($event)'></app-modal-input>
+    <app-datepickerbegin></app-datepickerbegin>
+    <app-wexpense>
+        <app-wbs (selectionChange)='onSelectionChange($event)'></app-wbs>
+    </app-wexpense>
     <app-select-type></app-select-type>
+    <app-person-autocomplete></app-person-autocomplete>
     <app-select-type-component> </app-select-type-component>
+    <app-start-expense></app-start-expense>
+
     <router-outlet></router-outlet>
 </div>
