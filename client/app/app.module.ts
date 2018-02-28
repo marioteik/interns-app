@@ -20,12 +20,12 @@ import { ListaComponent } from './components/lista/lista.component';
 import { ValorComponent } from './components/valor/valor.component';
 import { NotaComponent } from './components/nota/nota.component';
 import { fields } from './fields';
-import { PopoverModule } from 'ngx-bootstrap';
+import { PopoverModule, BsDatepickerModule } from 'ngx-bootstrap';
 // import { WbsComponent } from './components/wbs/wbs.component';
 import { SelectTypeComponent } from './components/select-type-component/select-type.component';
 import { ServiceTestService } from './service-test.service';
 import { WexpenseComponent } from './components/wexpense/wexpense.component';
-
+import { DatasubmitComponent } from './components/datasubmit/datasubmit.component';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -46,12 +46,14 @@ export function tokenGetter() {
     ValorComponent,
     NotaComponent,
     SelectTypeComponent,  
-    WexpenseComponent
+    WexpenseComponent,
+    DatasubmitComponent
   ],
   imports: [
     RoutingModule,
     SharedModule,
     PopoverModule.forRoot(),
+    BsDatepickerModule.forRoot(),
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,

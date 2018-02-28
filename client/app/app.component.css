@@ -9,25 +9,28 @@ body {
     height: auto;
     margin-top: 0px;
     margin-bottom: 0px;
+    background-color: gainsboro;
   } 
 
-
-#container{
-    background-color: gainsboro;
-    width: 100%;
-    height: 720px;
-    margin-top: 0px; 
-    top: fixed;
+#data-submit{
+    position: relative; 
+    /* border: 1px solid red; */
+    width: 1080px;
+    left: 371px;
+    margin-top: 50px;
+    background-color: white; 
 }
 
 
 #scnd-container{
+    margin-top: 20px; 
+    border: 1px solid white;
     position: relative;
     /* border: 1px solid red;*/
     margin-left: 0;
-    height: 559px;
-    width: 875px;
-    top: 20%;
-    left: 27%;
+    height: 700px;
+    width: 1080px;
+    top: 15%;
+    left: 22%;
     background-color: white;
 }

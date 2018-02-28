@@ -8,11 +8,11 @@
 
 .main-lista-select-type{
     position: relative;
-    left: 10px;
-    width: 860px;
+    left: 40px;
+    width: 1000px;
     height: 300px;
     /* max-width: 850px; */
-    /* min-width: 1037px; */
+    /* min-width: 1037px; */    
 }
 
 #accommodation{
@@ -25,11 +25,11 @@
 }
 
 #acom-div{
-    width: 140px;
+    width: 200px;
 }
 
 #car-div{
-    width: 200px;
+    width: 240px;
 }
 
 #otr-div{
@@ -38,7 +38,7 @@
 }
 
 #trv-div{
-    width: 245px;
+    width: 280px;
 }
 
 #travel{
@@ -60,7 +60,7 @@
 #title-select-type{
     position: relative;
     top: 10px;
-    left: 10px;
+    left: 40px;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
