@@ -1,0 +1,72 @@
+.button {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+}
+
+.main-lista-select-type{
+    width: 100;
+    max-width: 1080px;
+    min-width: 1037px;
+}
+
+#accommodation{
+    color: #890078;
+}
+
+#car{
+    color: #ffb414;
+}
+
+#travel{
+    color: #008c95;
+}
+
+#id{
+    color: 4b912a;
+}
+
+#meals{
+    color: #c80000;
+}
+
+#other{
+    color: #4b912a;
+}
+
+#title-select-type{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.lista-select-type{
+    float: left;
+    width: 25%;
+    text-decoration-style: none;
+    text-decoration: none;
+    text-decoration-line: none;
+    /* margin: 0.2rem;
+    margin-left: .2rem; */
+   
+}
+
+.sub-lista-select-type{
+    padding: 0;
+    color: white;
+}
+
+.link-select-type{
+    text-decoration: none;
+    color: white;
+    font-size: 70%;
+}
+
+
+.paragraph-select-type{
+    font-size: 75%;
+    text-align: left;
+}
+
+
