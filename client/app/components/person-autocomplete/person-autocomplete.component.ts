@@ -10,10 +10,18 @@ import { NgModel } from '@angular/forms';
   styleUrls: ['./person-autocomplete.component.css']
 })
 export class PersonAutocompleteComponent implements OnInit {
-  pessoas = PESSOAS;
+  mock = PESSOAS;
   escolhidos: String[] = [];
   ngOnInit(): void {
-    // throw new Error("Method not implemented.");
+    this.carregaMock();
+  }
+
+  pessoas: String[] = [];
+  carregaMock() {
+    for(let i = 0; i<this.mock.length; i++) {
+      this.pessoas.push(this.mock[i]);
+    }  
+    this.pessoas.sort();
   }
 
   pessoa = '';
@@ -28,6 +36,16 @@ export class PersonAutocompleteComponent implements OnInit {
     this.mostrarDropDown = !this.mostrarDropDown;
   }
 
+  private existeEmPessoas(p: String): boolean {
+    for(let i = 0; i<this.pessoas.length ; i++) {
+      if(this.pessoas[i] === p) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
   addPessoa() {
     
     console.log("entrou" + this.pessoa);
@@ -38,10 +56,23 @@ export class PersonAutocompleteComponent implements OnInit {
       }
     }
 
-    if(this.pessoa != '' && adiciona){
+    if(this.pessoa != '' && adiciona && this.existeEmPessoas(this.pessoa)){
       this.escolhidos.push(this.pessoa);
+      this.apagaPessoa();
       this.pessoa = '';
     }
+  }
+
+  apagaPessoa() {
+    let vetor: String[] = [];
+    for(let i = 0; i < this.pessoas.length; i++){
+      if(this.pessoa !== this.pessoas[i]) {
+        vetor.push(this.pessoas[i]);
+      }
+    }
+
+    this.pessoas = vetor;
+
   }
 
   apagaEscolhido(e) {
@@ -53,6 +84,16 @@ export class PersonAutocompleteComponent implements OnInit {
     }
 
     this.escolhidos = array;
+    this.devolveEscolhido(e);
   }
-n
+
+  devolveEscolhido(e) {
+    this.pessoas.push(e);
+    this.pessoas.sort();
+  }
+
+  finalizaLista() {
+    return this.escolhidos;
+  }
+
 }
