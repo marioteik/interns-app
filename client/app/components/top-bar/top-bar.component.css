@@ -1,0 +1,35 @@
+.main-header {
+    background: linear-gradient(to bottom right, #FF5800, #FFB414);
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    min-width: 200px;
+    position: top;
+    z-index : 1;
+}
+
+.logo {
+    height: 50px;
+}
+
+.iconelogin {
+    height: 30px;
+    align-items: middle;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.login {
+    float: right;
+}
+
+.nomelogin {
+    display: block;
+    line-height: 50px;
+    float: right;
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}

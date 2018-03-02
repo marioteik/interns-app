@@ -9,14 +9,15 @@
 
 .border{ 
     width: 1000px;
-    height:485px;
+    height:420px;
     border-style: solid;
     border-width: 2px;
-    /* position: absolute; */
+    position: absolute;
     border-color:#E5E5E5;
     display: inline-block;
     /* margin-top: 600px; */
-    top: 150px;
-    bottom: fixed;
+    top: 270px;
+    margin-left: 42px ;
+    /* bottom: fixed; */
 }
  

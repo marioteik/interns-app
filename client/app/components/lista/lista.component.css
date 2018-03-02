@@ -4,7 +4,10 @@
     padding:2px;  
 }
 
-td
+td{
+    text-align: center;
+    position: middle;
+}
 
 
 th, td{
@@ -16,3 +19,15 @@ th, td{
     width: 100px;
     text-align: center;
 }
+
+#icone{ 
+    margin-top: 0;
+    font-size: 25px;
+    color: #FFB414;
+    text-align: center;
+}
+
+#cont{
+    padding-bottom: 30px; 
+}
+

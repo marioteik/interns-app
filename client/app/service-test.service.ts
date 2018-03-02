@@ -21,6 +21,12 @@ export class ServiceTestService {
     this.hidden = true;
   }
 
+  inicio: boolean = true;
+
+  iniciar():void {
+    this.inicio = false;
+  }
+
   constructor() { }
 
 }

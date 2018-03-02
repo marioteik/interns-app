@@ -1,0 +1,13 @@
+<!-- <mat-form-field>
+  <mat-select placeholder="Selecione a WBS">
+    <mat-option *ngFor="let Wbss of wbsss" [value]="Wbss._id">
+     {{ Wbss.code }}
+    </mat-option>
+  </mat-select>
+</mat-form-field> -->
+<div class="selectClass">
+    <select id="Wbs" required [(ngModel)]="wbsSelect" (change)='sendWBS($event.target.value)'>
+    <option *ngFor="let Wbss of wbsss" value={{Wbss.code}}>{{Wbss.code}}</option>
+    
+    </select>
+    </div> 

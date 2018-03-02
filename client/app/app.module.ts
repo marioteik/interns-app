@@ -20,12 +20,19 @@ import { ListaComponent } from './components/lista/lista.component';
 import { ValorComponent } from './components/valor/valor.component';
 import { NotaComponent } from './components/nota/nota.component';
 import { fields } from './fields';
-import { PopoverModule, BsDatepickerModule } from 'ngx-bootstrap';
-// import { WbsComponent } from './components/wbs/wbs.component';
+import { PopoverModule, BsDatepickerModule, BsDropdownModule } from 'ngx-bootstrap';
+import { WbsComponent } from './components/wbs/wbs.component';
 import { SelectTypeComponent } from './components/select-type-component/select-type.component';
 import { ServiceTestService } from './service-test.service';
 import { WexpenseComponent } from './components/wexpense/wexpense.component';
 import { DatasubmitComponent } from './components/datasubmit/datasubmit.component';
+import { NavMyteComponent } from './components/nav-myte/nav-myte.component';
+import { TopBarComponent } from './components/top-bar/top-bar.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { DatePickerEndComponent } from './components/date-picker-end/date-picker-end.component';
+import { DatepickerbeginComponent } from './components/datepickerbegin/datepickerbegin.component';
+import { StartExpenseComponent } from './components/start-expense/start-expense.component';
+import { FormsModule } from '@angular/forms';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -47,13 +54,22 @@ export function tokenGetter() {
     NotaComponent,
     SelectTypeComponent,  
     WexpenseComponent,
-    DatasubmitComponent
+    DatasubmitComponent,
+    NavMyteComponent,
+    TopBarComponent,
+    MenuComponent,
+    WbsComponent,
+    DatePickerEndComponent,
+    DatepickerbeginComponent,
+    StartExpenseComponent
   ],
   imports: [
+    FormsModule,
     RoutingModule,
     SharedModule,
     PopoverModule.forRoot(),
     BsDatepickerModule.forRoot(),
+    BsDropdownModule.forRoot(),
     JwtModule.forRoot({
       config: {
         tokenGetter: tokenGetter,

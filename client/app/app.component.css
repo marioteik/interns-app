@@ -2,6 +2,9 @@ html{
     height: 100%;
 }
 
+.container-fluid{
+    margin-top: 50px;
+}
 
 body {
     min-height: 100vh;
@@ -12,13 +15,41 @@ body {
     background-color: gainsboro;
   } 
 
+#navbar{
+    margin-top:0;
+    /* border: 1px solid red; */
+    height: 70px;
+    width: 1080px;
+    margin-left: 371px;
+    vertical-align: bottom;
+}
+
+#sidebar{
+    float: left;
+}
+
 #data-submit{
+    padding-top: 15px;
+    height: 70px;
     position: relative; 
     /* border: 1px solid red; */
     width: 1080px;
     left: 371px;
-    margin-top: 50px;
+    margin-top: 0;
     background-color: white; 
+}
+
+#first-container{
+    margin-top: 20px; 
+    border: 1px solid white;
+    position: relative;
+    /* border: 1px solid red;*/
+    margin-left: 0;
+    height: 700px;
+    width: 1080px;
+    top: 15%;
+    left:371px;
+    background-color: white;
 }
 
 
@@ -31,6 +62,33 @@ body {
     height: 700px;
     width: 1080px;
     top: 15%;
-    left: 22%;
+    left:371px;
     background-color: white;
+}
+
+a{
+    margin-bottom: 55px;
+    display: block;
+    height: 50px;
+    vertical-align: center;
+    padding: 30px;
+    color: black;
+    text-align: center;
+}
+
+.sidenav {
+    margin-top: 50px;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 0; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; /* Black */
+    /* overflow-x: hidden; Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+img{
+    max-width: 40px;
 }

@@ -13,12 +13,12 @@
     <tr *ngFor="let c of ServiceTest.teste"  id={{c.id}} scope="row">
         <td>{{c.id}}</td>
         <td>{{c.tipo}}</td>
-        <td>{{c.wbs}}</td>
+        <td><app-wbs></app-wbs></td>
         <td><app-valor (insertValue) = 'onValueInserted($event)'></app-valor></td> 
-        <td>{{c.dtInicio}}</td>
-        <td>{{c.dtFim}}</td>
+        <td><app-datepickerbegin></app-datepickerbegin></td>
+        <td><app-date-picker-end></app-date-picker-end></td>
         <td><app-nota></app-nota></td>
-        <td><span>icon</span></td>
+        <td><span id="cont" ><i id="icone" class="fas fa-user-plus"></i></span></td>
     </tr>       
 </table>
 

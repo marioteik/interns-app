@@ -2,6 +2,8 @@ import { AfterViewChecked, ChangeDetectorRef, Component } from '@angular/core';
 import { AuthService } from './services/auth.service';
 import { ValorComponent } from './components/valor/valor.component';
 import { NgModel } from '@angular/forms';
+import { ServiceTestService } from './service-test.service';
+
 
 @Component({
   selector: 'app-root',
@@ -18,7 +20,9 @@ export class AppComponent implements AfterViewChecked {
   }
 
   constructor(public auth: AuthService,
-              private changeDetector: ChangeDetectorRef) { }
+              private changeDetector: ChangeDetectorRef,
+              private ServiceTest: ServiceTestService
+             ) { }
 
   // This fixes: https://github.com/DavideViolante/Angular-Full-Stack/issues/105
   ngAfterViewChecked() {

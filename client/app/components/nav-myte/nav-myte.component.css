@@ -1,0 +1,60 @@
+ul{
+    list-style: none;
+}   
+
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1080px;
+    width: 100%;
+}
+
+.myTe{
+    text-align: left;
+    width: 2 0%;
+}
+
+
+.submenu{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+li {
+    padding:0 15px;
+    transition: linear 0.2s color;
+    cursor: pointer;
+}
+
+li:hover{
+    color: red;
+}
+
+.btn-group{
+    height: 45px;
+    justify-content: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-group-button{
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+.dropdown-menu{
+    transition: linear 0.2s all;
+}
+
+.dropdown-menu.show{
+    left:auto !important;
+    right: 0 !important; 
+}
+ 
+   

@@ -48,14 +48,46 @@
   <router-outlet></router-outlet> -->
 
   <!-- <p> fdf {{valor.valor}}</p> -->
-  
+
+<header>
+  <app-top-bar></app-top-bar>
+</header>
+
+<div id="navbar">
+    <div class="sidenav">
+        <a href="#">
+          <img src=".\assets\calendar.png" alt="Time">
+          <br>
+          <span>Time</span>
+        </a>
+        <a href="#"><img src=".\assets\document.png" alt="Time">
+          <br>
+          <span>Expenses</span></a>
+        <a href="#"><img src=".\assets\placeholder.png" alt="Time">
+          <br>
+          <span>Locations</span></a>
+        <a href="#"><img src=".\assets\settings.png" alt="Time">
+          <br>
+          <span>Other Actions</span></a>
+      </div>
+
+  <app-nav-myte></app-nav-myte>
+</div>
+
+
+
 <div id="data-submit">
+    <!-- <app-nav-myte></app-nav-myte> -->
   <app-datasubmit></app-datasubmit>
 </div>
 
-  <div id="scnd-container">
-      <app-select-type-component></app-select-type-component> 
-  </div>
+<div *ngIf="ServiceTest.inicio" id="first-container">
+  <app-start-expense></app-start-expense>
+</div>
+
+<div *ngIf="!ServiceTest.inicio" id="scnd-container">
+   <app-select-type-component></app-select-type-component> 
+</div> 
 
 <!--  -->
 

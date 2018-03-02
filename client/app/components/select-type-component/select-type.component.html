@@ -1,109 +1,112 @@
-<ng-template #popTemplate>
-  <input type="number" min="0"/>
-</ng-template>
+<div id="expenses">
 
-<!-- add '[popover]="popTemplate"' on <a> tag of <li> itens to insert popOver -->
-<!-- <app-loading [condition]="isLoading"></app-loading> -->
-<!-- <app-toast [message]="toast.message"></app-toast> -->
+  <ng-template #popTemplate>
+    <input type="number" min="0" />
+  </ng-template>
 
-<p id="title-select-type">Select Type</p>
+  <!-- add '[popover]="popTemplate"' on <a> tag of <li> itens to insert popOver -->
+  <!-- <app-loading [condition]="isLoading"></app-loading> -->
+  <!-- <app-toast [message]="toast.message"></app-toast> -->
 
-<div class="main-lista-select-type">
+  <p id="title-select-type">Select Type</p>
 
-  <div id="acom-div" class="lista-select-type">
-    <p class="paragraph-select-type">Accommodation</p>
-    <ul class="sub-lista-select-type">
-      <li class="btn btn-secondary" (click)="ServiceTest.addItem('Apartment')">
+  <div class="main-lista-select-type">
+
+    <div id="acom-div" class="lista-select-type">
+      <p class="paragraph-select-type">Accommodation</p>
+      <ul class="sub-lista-select-type">
+        <li class="btn btn-secondary" (click)="ServiceTest.addItem('Apartment')">
           <span class="popover-wrapper">
-        <a href="#" class="link-select-type" id="accommodation"  placement="bottom"> Apartment </a>
-        </span>
-      </li>
-      <li class="btn btn-secondary" (click)="ServiceTest.addItem('Hotel')">
-        <span class="popover-wrapper">
-        <a  placement="bottom" class="link-select-type" id="accommodation"> Hotel </a>
-      </span>
-      </li>
-    </ul>
-  </div>
+            <a href="#" class="link-select-type" id="accommodation" placement="bottom"> Apartment </a>
+          </span>
+        </li>
+        <li class="btn btn-secondary" (click)="ServiceTest.addItem('Hotel')">
+          <span class="popover-wrapper">
+            <a placement="bottom" class="link-select-type" id="accommodation"> Hotel </a>
+          </span>
+        </li>
+      </ul>
+    </div>
 
-  <div id="car-div" class="lista-select-type">
-    <p class="paragraph-select-type">Car</p>
-    <ul class="sub-lista-select-type">
-      <li class="btn btn-secondary">
+    <div id="car-div" class="lista-select-type">
+      <p class="paragraph-select-type">Car</p>
+      <ul class="sub-lista-select-type">
+        <li class="btn btn-secondary">
           <span class="popover-wrapper" (click)="ServiceTest.addItem('Parking, Toll, Fuel')">
-        <a href="#" class="link-select-type" id="car"  placement="bottom" > Parking, Toll, Fuel </a>
-        </span>
-      </li>
-      <li class="btn btn-secondary">
+            <a href="#" class="link-select-type" id="car" placement="bottom"> Parking, Toll, Fuel </a>
+          </span>
+        </li>
+        <li class="btn btn-secondary">
           <span class="popover-wrapper" (click)="ServiceTest.addItem('Hire, Rental')">
-        <a href="#" class="link-select-type" id="car"  placement="bottom"> Hire, Rental </a>
-        </span>
-      </li>
-      <li class="btn btn-secondary">
+            <a href="#" class="link-select-type" id="car" placement="bottom"> Hire, Rental </a>
+          </span>
+        </li>
+        <li class="btn btn-secondary">
           <span class="popover-wrapper" (click)="ServiceTest.addItem('KM, Miles Allwoance')">
-        <a href="#" class="link-select-type" id="car"  placement="bottom"> KM, Miles Allowance </a>
-        </span>
-      </li>
-    </ul>
-  </div>
+            <a href="#" class="link-select-type" id="car" placement="bottom"> KM, Miles Allowance </a>
+          </span>
+        </li>
+      </ul>
+    </div>
 
-  <div class="lista-select-type" id="trv-div">
-    <p class="paragraph-select-type">Travel</p>
-    <ul class="sub-lista-select-type">
-      <li class="btn btn-secondary" (click)="ServiceTest.addItem('Taxi - Local - Multiple Entry Template')">
+    <div class="lista-select-type" id="trv-div">
+      <p class="paragraph-select-type">Travel</p>
+      <ul class="sub-lista-select-type">
+        <li class="btn btn-secondary" (click)="ServiceTest.addItem('Taxi - Local - Multiple Entry Template')">
           <span class="popover-wrapper">
-        <a href="#" class="link-select-type" id="travel"  placement="bottom"> Taxi - Local - Multiple Entry Template</a>
-        </span>
-      </li>
-      <li class="btn btn-secondary" (click)="ServiceTest.addItem('Rail')">
+            <a href="#" class="link-select-type" id="travel" placement="bottom"> Taxi - Local - Multiple Entry Template</a>
+          </span>
+        </li>
+        <li class="btn btn-secondary" (click)="ServiceTest.addItem('Rail')">
           <span class="popover-wrapper">
-        <a href="#" class="link-select-type" id="travel"  placement="bottom" >Rail</a>
-        </span>
-      </li>
-      <li class="btn btn-secondary" (click)="ServiceTest.addItem('Public Public, Limo & Other')">
+            <a href="#" class="link-select-type" id="travel" placement="bottom">Rail</a>
+          </span>
+        </li>
+        <li class="btn btn-secondary" (click)="ServiceTest.addItem('Public Public, Limo & Other')">
           <span class="popover-wrapper">
-        <a href="#" class="link-select-type" id="travel"  placement="bottom" > Public, Limo & Other </a>
-        </span>
-      </li>
-      <li class="btn btn-secondary" (click)="ServiceTest.addItem('Taxi')">
-        <span class="popover-wrapper">
-              <a   placement="bottom" class="link-select-type" id="travel" >  Taxi  </a>
-        </span>
-      </li>
-      <li class="btn btn-secondary" (click)="ServiceTest.addItem('Air')">
+            <a href="#" class="link-select-type" id="travel" placement="bottom"> Public, Limo & Other </a>
+          </span>
+        </li>
+        <li class="btn btn-secondary" (click)="ServiceTest.addItem('Taxi')">
           <span class="popover-wrapper">
-        <a href="#" class="link-select-type" id="travel"  placement="bottom" > Air </a>
-        </span>
-      </li>
-    </ul>
-  </div>
+            <a placement="bottom" class="link-select-type" id="travel"> Taxi </a>
+          </span>
+        </li>
+        <li class="btn btn-secondary" (click)="ServiceTest.addItem('Air')">
+          <span class="popover-wrapper">
+            <a href="#" class="link-select-type" id="travel" placement="bottom"> Air </a>
+          </span>
+        </li>
+      </ul>
+    </div>
 
-  <div id="otr-div"  class="lista-select-type">
-    <p class="paragraph-select-type">Other</p>
-    <ul class="sub-lista-select-type">
-      <li class="btn btn-secondary" (click)="ServiceTest.addItem('Per Diem')">
+    <div id="otr-div" class="lista-select-type">
+      <p class="paragraph-select-type">Other</p>
+      <ul class="sub-lista-select-type">
+        <li class="btn btn-secondary" (click)="ServiceTest.addItem('Per Diem')">
           <span class="popover-wrapper">
-        <a href="#" class="link-select-type" id="other"  placement="bottom" > Per Diem </a>
-        </span>
-      </li>
-      <li class="btn btn-secondary" (click)="ServiceTest.addItem('Telecom/Internet')">
+            <a href="#" class="link-select-type" id="other" placement="bottom"> Per Diem </a>
+          </span>
+        </li>
+        <li class="btn btn-secondary" (click)="ServiceTest.addItem('Telecom/Internet')">
           <span class="popover-wrapper">
-        <a href="#" class="link-select-type" id="accommodation" placement="bottom" > Telecom/Internet </a>
-        </span>
-      </li>
-      <li class="btn btn-secondary" (click)="ServiceTest.addItem('Startup Allowance')">
+            <a href="#" class="link-select-type" id="accommodation" placement="bottom"> Telecom/Internet </a>
+          </span>
+        </li>
+        <li class="btn btn-secondary" (click)="ServiceTest.addItem('Startup Allowance')">
           <span class="popover-wrapper">
-        <a href="#" class="link-select-type" id="car"  placement="bottom" > Startup Allowance </a>
-        </span>
-      </li>
-      <li class="btn btn-secondary">
+            <a href="#" class="link-select-type" id="car" placement="bottom"> Startup Allowance </a>
+          </span>
+        </li>
+        <li class="btn btn-secondary">
           <span class="popover-wrapper" (click)="ServiceTest.addItem('Meals and Entertainment')">
-        <a href="#" class="link-select-type" id="meals"  placement="bottom"> Meals and Entertainment </a>
-        </span>
-      </li>
-    </ul>
+            <a href="#" class="link-select-type" id="meals" placement="bottom"> Meals and Entertainment </a>
+          </span>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <app-wexpense *ngIf="!ServiceTest.hidden"></app-wexpense>
 
-  <app-lista *ngIf="ServiceTest.hidden" (insertValue) = 'recievingValue($event)'></app-lista>   
+  <app-lista *ngIf="ServiceTest.hidden" (insertValue)='recievingValue($event)'></app-lista>
